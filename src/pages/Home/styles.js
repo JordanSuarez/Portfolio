@@ -57,10 +57,11 @@ export default ({palette, font}) => ({
       transform: 'translateY(10px) scale3d(1.01,1.01,1)',
     },
     '90%': {
-      '-webkit-transform': ' rotate(-5deg)',
+      '-webkit-transform': ' rotate(-10deg)',
       transform: 'translateY(7px) scale3d(1,1,1)',
     },
     '100%': {
+      '-webkit-transform': ' rotate(-5deg)',
       transform: 'translateY(3px) scale3d(1,1,1)',
     },
   },

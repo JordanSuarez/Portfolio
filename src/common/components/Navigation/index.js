@@ -1,6 +1,6 @@
 import {withStyles} from '@material-ui/core'
 
-import styles from './styles.css'
-import Watcher from './Watcher'
+import styles from './styles'
+import Navigation from './Navigation'
 
-export default withStyles(styles)(Watcher)
+export default withStyles(styles)(Navigation)
