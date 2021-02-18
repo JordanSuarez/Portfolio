@@ -4,9 +4,7 @@ import {classes as classesProps} from 'common/classes'
 import {animated, useSpring} from 'react-spring'
 import {node} from 'prop-types'
 
-
-
-function Watcher({children, classes}) {
+const Watcher = ({children, classes}) => {
   const [props, set] = useSpring(() => (
       {
           xy: [0, 0],

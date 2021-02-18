@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useRef, useState} from 'react'
 
 import {classes as classesProps} from 'common/classes'
 
-function useEventListener(eventName, handler, element = document) {
+const useEventListener = (eventName, handler, element = document) => {
   const savedHandler = useRef()
 
   useEffect(() => {
@@ -15,17 +15,14 @@ function useEventListener(eventName, handler, element = document) {
     if (!isSupported) return
 
     const eventListener = (event) => savedHandler.current(event)
-
     element.addEventListener(eventName, eventListener)
 
-    // eslint-disable-next-line consistent-return
     return () => {
       element.removeEventListener(eventName, eventListener)
     }
   }, [eventName, element])
 }
 
-// eslint-disable-next-line react/prop-types
 const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
   const cursorOuterRef = useRef()
   const cursorInnerRef = useRef()
@@ -58,10 +55,9 @@ const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
       previousTimeRef.current = time
       requestRef.current = requestAnimationFrame(animateOuterCursor)
     },
-    [requestRef] // eslint-disable-line
+    [requestRef]
   )
 
-  // eslint-disable-next-line no-return-assign
   useEffect(() => (requestRef.current = requestAnimationFrame(animateOuterCursor)), [animateOuterCursor])
 
   const onMouseDown = useCallback(() => setIsActive(true), [])
@@ -106,7 +102,6 @@ const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
     const clickables = document.querySelectorAll('a, input[type="submit"], input[type="image"], label[for], select, button, .link')
 
     clickables.forEach((el) => {
-      // eslint-disable-next-line no-param-reassign
       el.style.cursor = 'none'
 
       el.addEventListener('mouseover', () => {
