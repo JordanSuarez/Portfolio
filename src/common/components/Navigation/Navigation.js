@@ -2,14 +2,7 @@ import React from 'react'
 
 import {classes as classesProps} from 'common/classes'
 
-const Navigation = ({classes}) => {
-
-  return (
-    <div className={classes.navigation}>
-
-    </div>
-  )
-}
+const Navigation = ({classes}) => <div className={classes.navigation} />
 
 Navigation.propTypes = {
   ...classesProps,

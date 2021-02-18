@@ -15,8 +15,10 @@ const useEventListener = (eventName, handler, element = document) => {
     if (!isSupported) return
 
     const eventListener = (event) => savedHandler.current(event)
+
     element.addEventListener(eventName, eventListener)
 
+    // eslint-disable-next-line consistent-return
     return () => {
       element.removeEventListener(eventName, eventListener)
     }
@@ -55,9 +57,10 @@ const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
       previousTimeRef.current = time
       requestRef.current = requestAnimationFrame(animateOuterCursor)
     },
-    [requestRef]
+    [requestRef],
   )
 
+  // eslint-disable-next-line no-return-assign
   useEffect(() => (requestRef.current = requestAnimationFrame(animateOuterCursor)), [animateOuterCursor])
 
   const onMouseDown = useCallback(() => setIsActive(true), [])
@@ -102,6 +105,7 @@ const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
     const clickables = document.querySelectorAll('a, input[type="submit"], input[type="image"], label[for], select, button, .link')
 
     clickables.forEach((el) => {
+      // eslint-disable-next-line no-param-reassign
       el.style.cursor = 'none'
 
       el.addEventListener('mouseover', () => {
