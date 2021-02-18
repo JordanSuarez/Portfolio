@@ -5,7 +5,7 @@ import {node} from 'prop-types'
 
 import {classes as classesProps} from 'common/classes'
 
-const Watcher = ({children, classes}) => {
+const Parallax = ({children, classes}) => {
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
     config: {
@@ -27,9 +27,9 @@ const Watcher = ({children, classes}) => {
   )
 }
 
-Watcher.propTypes = {
+Parallax.propTypes = {
   children: node.isRequired,
   ...classesProps,
 }
 
-export default Watcher
+export default Parallax

@@ -1,6 +1,6 @@
 import {withStyles} from '@material-ui/core'
 
+import Base from './Base'
 import styles from './styles'
-import Watcher from './Watcher'
 
-export default withStyles(styles)(Watcher)
+export default withStyles(styles)(Base)

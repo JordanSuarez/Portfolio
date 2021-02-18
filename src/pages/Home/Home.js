@@ -1,13 +1,13 @@
 import React from 'react'
 
 import {classes as classesProps} from 'common/classes'
-import Watcher from 'common/components/Watcher'
+import Base from 'common/components/Base'
 
 const Home = ({classes}) => {
   const description = 'Développeur Web'
 
   return (
-    <Watcher>
+    <Base>
       <div className={classes.titleWrapper}>
         <h1 className={classes.title}>
           <span className={classes.primaryLetter}>J</span>
@@ -26,7 +26,7 @@ const Home = ({classes}) => {
         </h1>
         <p className={classes.description}>{description}</p>
       </div>
-    </Watcher>
+    </Base>
   )
 }
 

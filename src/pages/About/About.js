@@ -1,5 +1,7 @@
 import React from 'react'
 
-const About = () => <div>about</div>
+import Base from 'common/components/Base'
+
+const About = () => <Base>about</Base>
 
 export default About

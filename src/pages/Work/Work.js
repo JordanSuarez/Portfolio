@@ -1,5 +1,7 @@
 import React from 'react'
 
-const Work = () => <div>Work</div>
+import Base from 'common/components/Base'
+
+const Work = () => <Base>Work</Base>
 
 export default Work
