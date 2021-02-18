@@ -25,7 +25,7 @@ const useEventListener = (eventName, handler, element = document) => {
   }, [eventName, element])
 }
 
-const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
+const Cursor = ({classes, outerScale = 3, innerScale = 0.7}) => {
   const cursorOuterRef = useRef()
   const cursorInnerRef = useRef()
   const requestRef = useRef()
@@ -102,7 +102,9 @@ const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
   }, [isVisible])
 
   useEffect(() => {
-    const clickables = document.querySelectorAll('a, input[type="submit"], input[type="image"], label[for], select, button, .link')
+    const clickables = document.querySelectorAll(
+      'a, input[type="submit"], input[type="image"],input[type="checkbox"], label[for], select, button, .link',
+    )
 
     clickables.forEach((el) => {
       // eslint-disable-next-line no-param-reassign

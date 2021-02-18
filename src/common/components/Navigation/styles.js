@@ -1,4 +1,4 @@
-export default () => ({
+export default ({palette}) => ({
   menuToggle: {
     display: 'block',
     position: 'relative',
@@ -75,5 +75,8 @@ export default () => ({
       padding: '10px 0',
       fontSize: '22px',
     },
+  },
+  activeLink: {
+    color: palette.red,
   },
 })
