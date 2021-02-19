@@ -7,6 +7,7 @@ export default ({palette, cursor}) => ({
     transition: 'opacity 0.15s ease-in-out, transform 0.15s ease-in-out',
   },
   cursorInner: {
+    zIndex: 999,
     position: 'fixed',
     borderRadius: '50%',
     width: cursor.innerSize,
@@ -16,6 +17,7 @@ export default ({palette, cursor}) => ({
     transition: 'opacity 0.15s ease-in-out, transform 0.25s ease-in-out',
   },
   cursorOuter: {
+    zIndex: 999,
     position: 'fixed',
     borderRadius: '50%',
     pointerEvents: 'none',

@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useRef, useState} from 'react'
 
 import {classes as classesProps} from 'common/classes'
 
-function useEventListener(eventName, handler, element = document) {
+const useEventListener = (eventName, handler, element = document) => {
   const savedHandler = useRef()
 
   useEffect(() => {
@@ -25,8 +25,7 @@ function useEventListener(eventName, handler, element = document) {
   }, [eventName, element])
 }
 
-// eslint-disable-next-line react/prop-types
-const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
+const Cursor = ({classes, outerScale = 3, innerScale = 0.7}) => {
   const cursorOuterRef = useRef()
   const cursorInnerRef = useRef()
   const requestRef = useRef()
@@ -58,7 +57,7 @@ const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
       previousTimeRef.current = time
       requestRef.current = requestAnimationFrame(animateOuterCursor)
     },
-    [requestRef] // eslint-disable-line
+    [requestRef],
   )
 
   // eslint-disable-next-line no-return-assign
@@ -103,7 +102,9 @@ const Cursor = ({classes, outerScale = 5, innerScale = 0.7}) => {
   }, [isVisible])
 
   useEffect(() => {
-    const clickables = document.querySelectorAll('a, input[type="submit"], input[type="image"], label[for], select, button, .link')
+    const clickables = document.querySelectorAll(
+      'a, input[type="submit"], input[type="image"],input[type="checkbox"], label[for], select, button, .link',
+    )
 
     clickables.forEach((el) => {
       // eslint-disable-next-line no-param-reassign

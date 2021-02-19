@@ -2,6 +2,6 @@ import React from 'react'
 
 import Base from 'common/components/Base'
 
-const Work = () => <Base>Work</Base>
+const Contact = () => <Base>about</Base>
 
-export default Work
+export default Contact
