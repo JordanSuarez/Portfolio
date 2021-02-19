@@ -85,8 +85,4 @@ export default ({palette, font}) => ({
       transform: 'translateY(0px) scale3d(0.98,0.98,1) ',
     },
   },
-  'page-enter': {
-    opacity: '0',
-    transform: 'scale(1.1)',
-  },
 })
