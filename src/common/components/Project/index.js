@@ -1,6 +1,6 @@
 import {withStyles} from '@material-ui/core'
 
+import Project from './Project'
 import styles from './styles'
-import Work from './Work'
 
-export default withStyles(styles)(Work)
+export default withStyles(styles)(Project)
