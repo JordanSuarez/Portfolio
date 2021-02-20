@@ -5,6 +5,7 @@ export default ({palette, breakpoints}) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
     marginBottom: '10rem',
+    alignItems: 'center',
   },
   article: {
     color: palette.light,

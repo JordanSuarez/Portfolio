@@ -5,7 +5,8 @@ import Fade from 'react-reveal/Fade'
 import {classes as classesProps} from 'common/classes'
 import Card from 'common/components/Card'
 
-const Project = ({classes, title, logo, description, context}) => (
+//TODO add props validation
+const Project = ({classes, title, logo, description, context, imageUrl}) => (
   <div className={classes.projectContainer}>
     <Fade right cascade>
       <article className={classes.article}>
@@ -27,12 +28,13 @@ const Project = ({classes, title, logo, description, context}) => (
       </article>
     </Fade>
     <Fade left>
-      <Card />
+      <Card imageUrl={imageUrl} />
     </Fade>
   </div>
 )
 
 Project.propTypes = {
+  //TODO add props validation
   ...classesProps,
 }
 
