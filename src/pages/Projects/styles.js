@@ -15,6 +15,6 @@ export default ({palette}) => ({
     alignItems: 'center',
     marginTop: '10rem',
     overflow: 'scroll',
-    height: '100vh',
+    height: '70%',
   },
 })
