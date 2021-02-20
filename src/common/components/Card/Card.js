@@ -11,8 +11,6 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 const Card = ({classes, imageUrl}) => {
   const [props, set] = useSpring(() => ({xys: [0, 0, 1], config: {mass: 5, tension: 100, friction: 100}}))
 
-  console.log(imageUrl)
-
   return (
     <animated.div
       className={classes.card}

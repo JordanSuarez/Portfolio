@@ -19,8 +19,8 @@ import symfony from 'common/assets/images/logo/symfony.png'
 
 export const projetsDeDev = [react, redux, mysql, nodejs, nginx, express, socketio, sequelize, css, html, aws, mocha]
 
-export const translationChromeExtension = [docker, react, nginx, mariadb, symfony, doctrine, css, html]
+export const cookMe = [docker, react, nginx, mariadb, symfony, doctrine, css, html]
 
-export const cookMe = [javascript, css, html]
+export const translationChromeExtension = [javascript, css, html]
 
 export const swapiDashboard = [javascript, css, html, jquery]

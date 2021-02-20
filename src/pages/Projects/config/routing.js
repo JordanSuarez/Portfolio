@@ -3,7 +3,7 @@ import {PROJECT} from 'common/routing/routesResolver'
 import Project from '../index'
 
 export default {
-  id: 'projectsPage',
+  id: 'projectPage',
   path: PROJECT,
   component: Project,
 }

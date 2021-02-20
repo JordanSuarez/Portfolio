@@ -37,7 +37,7 @@ const Home = ({classes}) => {
               <span className={classes.letter}>&#125;</span>
             </h1>
             <p className={classes.description}>{description}</p>
-            <Link to={getProjectRoute(1)}>
+            <Link to={getProjectRoute()}>
               <Fade bottom>
                 <Button label={label} />
               </Fade>

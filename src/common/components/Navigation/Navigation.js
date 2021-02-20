@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 
 import './styles.css'
 import {classes as classesProps} from 'common/classes'
-import {getAboutRoute, getHomeRoute, getProjectRoute} from '../../routing/routesResolver'
+import {getAboutRoute, getHomeRoute, getProjectRoute} from 'common/routing/routesResolver'
 
 const Navigation = ({classes}) => {
   const routes = [

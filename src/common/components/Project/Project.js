@@ -1,11 +1,11 @@
 import React from 'react'
 
+import {arrayOf, string} from 'prop-types'
 import Fade from 'react-reveal/Fade'
 
 import {classes as classesProps} from 'common/classes'
 import Card from 'common/components/Card'
 
-//TODO add props validation
 const Project = ({classes, title, logo, description, context, imageUrl}) => (
   <div className={classes.projectContainer}>
     <Fade right cascade>
@@ -34,7 +34,11 @@ const Project = ({classes, title, logo, description, context, imageUrl}) => (
 )
 
 Project.propTypes = {
-  //TODO add props validation
+  context: string.isRequired,
+  description: string.isRequired,
+  imageUrl: string.isRequired,
+  logo: arrayOf(string.isRequired).isRequired,
+  title: string.isRequired,
   ...classesProps,
 }
 

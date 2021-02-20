@@ -1,4 +1,5 @@
 import {cookMe, projetsDeDev, swapiDashboard, translationChromeExtension} from './logo'
+import chromeExtension from 'common/assets/images/chromeExtension.png'
 import swapi from 'common/assets/images/swapi.png'
 
 export default [
@@ -17,6 +18,7 @@ export default [
     description:
       'Extension google chrome permettant de traduire un mot ou une phrase à la volé, en insérant la traduction apres le mot sélectionné dans la page.',
     context: ' Projet personnel',
+    imageUrl: chromeExtension,
   },
   {
     id: 3,
