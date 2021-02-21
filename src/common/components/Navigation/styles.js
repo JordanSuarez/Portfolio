@@ -2,8 +2,8 @@ export default ({palette}) => ({
   menuToggle: {
     display: 'block',
     position: 'relative',
-    top: '50px',
-    left: '50px',
+    top: '2.8rem',
+    left: '2rem',
     zIndex: '1',
     '-webkit-user-select': 'none',
     'user-select': 'none',
@@ -14,9 +14,6 @@ export default ({palette}) => ({
       color: palette.light,
       transition: 'color 0.3s ease',
       fontSize: '2.5rem',
-      '&:hover': {
-        // color: palette.lightRed,
-      },
     },
     '& span:first-child': {
       transformOrigin: '0% 0%',
@@ -80,7 +77,7 @@ export default ({palette}) => ({
     margin: '-100px 0 0 -50px',
     padding: '50px',
     paddingTop: '125px',
-    background: 'rgba(0, 0, 0, 0.4)',
+    background: 'rgb(2 17 35 / 82%)',
     'list-style-type': 'none',
     '-webkit-font-smoothing': 'antialiased',
     transformOrigin: '0% 0%',
@@ -97,17 +94,12 @@ export default ({palette}) => ({
       },
       '&:hover': {
         '& a': {
-          border: `1px solid ${palette.light}`,
-          padding: '0px 3px 3px 0px',
           textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
         },
         '&::first-letter': {
           backgroundColor: palette.light,
           color: palette.lightRed,
         },
-      },
-      '& a:hover': {
-        // color: palette.lightRed,
       },
     },
   },

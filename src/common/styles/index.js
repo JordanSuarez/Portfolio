@@ -19,10 +19,10 @@ const font = {
 
 const breakpoints = {
   values: {
-    xs: 0,
-    sm: 500,
+    xs: 335,
+    sm: 535,
     md: 960,
-    lg: 1280,
+    lg: 1100,
     xl: 1920,
   },
 }

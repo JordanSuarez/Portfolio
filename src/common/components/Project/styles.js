@@ -6,8 +6,12 @@ export default ({palette, breakpoints}) => ({
     justifyContent: 'space-evenly',
     alignItems: 'center',
     alignContent: 'center',
-    paddingTop: '10rem',
-    margin: '0 auto 20vh auto',
+    paddingTop: '3rem',
+    margin: '0 auto',
+    [breakpoints.up('lg')]: {
+      paddingTop: '10rem',
+      margin: '0 auto 20vh auto',
+    },
   },
   article: {
     color: palette.light,
@@ -15,9 +19,12 @@ export default ({palette, breakpoints}) => ({
     flexWrap: 'wrap',
     flexDirection: 'column',
     margin: '1rem',
-    width: '100%',
-    [breakpoints.up('sm')]: {
+    width: '90%',
+    [breakpoints.up('lg')]: {
       width: '50%',
+      '& categoriesContainer': {
+        alignItems: 'center',
+      },
     },
   },
   title: {
@@ -33,6 +40,8 @@ export default ({palette, breakpoints}) => ({
   categoriesContainer: {
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
+
     '& div': {
       display: 'flex',
       flexWrap: 'wrap',
@@ -57,5 +66,8 @@ export default ({palette, breakpoints}) => ({
     marginBottom: '1rem',
     borderRadius: '1rem',
     backgroundColor: palette.lightRed,
+  },
+  cardContainer: {
+    padding: '0 1.6rem 0 1rem',
   },
 })

@@ -35,7 +35,9 @@ const Project = ({classes, title, logos, description, context, imageUrl, feature
       </article>
     </Fade>
     <Fade left>
-      <Card key={uuid()} imageUrl={imageUrl} />
+      <div className={classes.cardContainer}>
+        <Card key={uuid()} imageUrl={imageUrl} />
+      </div>
     </Fade>
   </div>
 )
