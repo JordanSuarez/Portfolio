@@ -10,11 +10,13 @@ export default ({palette}) => ({
       border: `1px solid ${palette.light}`,
       padding: '0px 3px 3px 5px',
     },
+    position: 'absolute',
+    right: '0.6rem',
+    backgroundColor: palette.firstDarkBlue,
+    zIndex: '0',
   },
   wrapper: {
-    alignItems: 'center',
-    marginTop: '10rem',
     overflow: 'scroll',
-    height: '70%',
+    height: '100vh',
   },
 })

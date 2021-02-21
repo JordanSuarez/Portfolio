@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {v4 as uuid} from 'uuid'
+
 import './styles.css'
 import {classes as classesProps} from 'common/classes'
 
@@ -11,10 +13,10 @@ const Button = ({label}) => {
       <button type="button" className="button button--nanuk button--text-thick button--text-upper button--size-s button--border-thick">
         {splitLabel.map((letter) => {
           if (letter === ' ') {
-            return <span>&nbsp;</span>
+            return <span key={uuid()}>&nbsp;</span>
           }
 
-          return <span>{letter}</span>
+          return <span key={uuid()}>{letter}</span>
         })}
       </button>
     </div>

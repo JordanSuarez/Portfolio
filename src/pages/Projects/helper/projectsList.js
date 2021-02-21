@@ -1,6 +1,7 @@
 import {cookMe, projetsDeDev, swapiDashboard, translationChromeExtension} from './logo'
-import chromeExtension from 'common/assets/images/chromeExtension.png'
-import swapi from 'common/assets/images/swapi.png'
+import chromeExtensionImage from 'common/assets/images/chromeExtension.png'
+import projetsDeDevImage from 'common/assets/images/projetsDeDev.png'
+import swapiImage from 'common/assets/images/swapi.png'
 
 export default [
   {
@@ -10,6 +11,7 @@ export default [
     description:
       "Plateforme collaborative permettant l'hébergement et le partage de projet de développeurs. Développé entièrement en Javascript, c'est un projet réalisé en équipe en fin de formation",
     context: ' Projet de fin de formation',
+    imageUrl: projetsDeDevImage,
   },
   {
     id: 2,
@@ -18,7 +20,7 @@ export default [
     description:
       'Extension google chrome permettant de traduire un mot ou une phrase à la volé, en insérant la traduction apres le mot sélectionné dans la page.',
     context: ' Projet personnel',
-    imageUrl: chromeExtension,
+    imageUrl: chromeExtensionImage,
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ export default [
     logo: cookMe,
     description: 'Application de gestion de recette de cuisine',
     context: ' Projet personnel',
+    imageUrl: swapiImage,
   },
   {
     id: 4,
@@ -34,6 +37,6 @@ export default [
     description:
       "Plateforme collaborative permettant l'hébergement et le partage de projet de développeurs. Développé entièrement en Javascript, c'est un projet réalisé en équipe en fin de formation",
     context: ' Projet personnel',
-    imageUrl: swapi,
+    imageUrl: swapiImage,
   },
 ]

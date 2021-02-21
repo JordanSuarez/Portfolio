@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {v4 as uuid} from 'uuid'
+
 import {arrayOf, string} from 'prop-types'
 import Fade from 'react-reveal/Fade'
 
@@ -10,6 +12,7 @@ const Project = ({classes, title, logo, description, context, imageUrl}) => (
   <div className={classes.projectContainer}>
     <Fade right cascade>
       <article className={classes.article}>
+        <div className={classes.divider} />
         <h2 className={classes.title}>
           {title}
           <span className={classes.context}>{context}</span>
@@ -20,7 +23,7 @@ const Project = ({classes, title, logo, description, context, imageUrl}) => (
             <span className={classes.category}>Technologies</span>
             <div>
               {logo.map((lo) => (
-                <img src={lo} alt="" className={classes.icon} />
+                <img src={lo} alt="" className={classes.icon} key={uuid()} />
               ))}
             </div>
           </div>
@@ -28,7 +31,7 @@ const Project = ({classes, title, logo, description, context, imageUrl}) => (
       </article>
     </Fade>
     <Fade left>
-      <Card imageUrl={imageUrl} />
+      <Card imageUrl={imageUrl} key={uuid()} />
     </Fade>
   </div>
 )

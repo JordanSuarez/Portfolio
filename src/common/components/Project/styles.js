@@ -4,8 +4,10 @@ export default ({palette, breakpoints}) => ({
     flexDirection: 'row-reverse',
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
-    marginBottom: '10rem',
     alignItems: 'center',
+    alignContent: 'center',
+    paddingTop: '12rem',
+    margin: '5vh auto 20vh auto',
   },
   article: {
     color: palette.light,
@@ -49,5 +51,11 @@ export default ({palette, breakpoints}) => ({
   icon: {
     width: '3rem',
     margin: '0.1rem 0.5rem',
+  },
+  divider: {
+    height: '3px',
+    marginBottom: '1rem',
+    borderRadius: '1rem',
+    backgroundColor: palette.lightRed,
   },
 })
