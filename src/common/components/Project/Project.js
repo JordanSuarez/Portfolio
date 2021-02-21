@@ -1,14 +1,13 @@
 import React from 'react'
 
-import {v4 as uuid} from 'uuid'
-
 import {arrayOf, string} from 'prop-types'
+import {v4 as uuid} from 'uuid'
 import Fade from 'react-reveal/Fade'
 
 import {classes as classesProps} from 'common/classes'
 import Card from 'common/components/Card'
 
-const Project = ({classes, title, logo, description, context, imageUrl}) => (
+const Project = ({classes, title, logos, description, context, imageUrl, features}) => (
   <div className={classes.projectContainer}>
     <Fade right cascade>
       <article className={classes.article}>
@@ -18,12 +17,17 @@ const Project = ({classes, title, logo, description, context, imageUrl}) => (
           <span className={classes.context}>{context}</span>
         </h2>
         <p>{description}</p>
+        <ul>
+          {features.map((feature) => (
+            <li key={uuid()}>{feature}</li>
+          ))}
+        </ul>
         <div>
           <div className={classes.categoriesContainer}>
             <span className={classes.category}>Technologies</span>
             <div>
-              {logo.map((lo) => (
-                <img src={lo} alt="" className={classes.icon} key={uuid()} />
+              {logos.map((logo) => (
+                <img src={logo} alt="" className={classes.icon} key={uuid()} />
               ))}
             </div>
           </div>
@@ -31,7 +35,7 @@ const Project = ({classes, title, logo, description, context, imageUrl}) => (
       </article>
     </Fade>
     <Fade left>
-      <Card imageUrl={imageUrl} key={uuid()} />
+      <Card key={uuid()} imageUrl={imageUrl} />
     </Fade>
   </div>
 )
@@ -40,7 +44,7 @@ Project.propTypes = {
   context: string.isRequired,
   description: string.isRequired,
   imageUrl: string.isRequired,
-  logo: arrayOf(string.isRequired).isRequired,
+  logos: arrayOf(string.isRequired).isRequired,
   title: string.isRequired,
   ...classesProps,
 }

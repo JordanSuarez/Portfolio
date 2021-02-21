@@ -5,10 +5,11 @@ export default ({palette}) => ({
     fontWeight: '400',
     textTransform: 'uppercase',
     textAlign: 'end',
-    '& span': {
-      textShadow: `-2px 1px 0px ${palette.lightRed}`,
+    '&::first-letter': {
+      textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
       border: `1px solid ${palette.light}`,
       padding: '0px 3px 3px 5px',
+      backgroundColor: palette.lightRed,
     },
     position: 'absolute',
     right: '0.6rem',
@@ -18,5 +19,7 @@ export default ({palette}) => ({
   wrapper: {
     overflow: 'scroll',
     height: '100vh',
+    marginTop: '5rem',
+    borderTop: `1px solid ${palette.light}`,
   },
 })

@@ -8,10 +8,15 @@ export default ({palette}) => ({
     '-webkit-user-select': 'none',
     'user-select': 'none',
     textDecoration: 'none',
-    color: '#232323',
     transition: 'color 0.3s ease',
-    '&:hover': {
-      color: 'tomato',
+    '& a': {
+      textDecoration: 'none',
+      color: palette.light,
+      transition: 'color 0.3s ease',
+      fontSize: '2.5rem',
+      '&:hover': {
+        // color: palette.lightRed,
+      },
     },
     '& span:first-child': {
       transformOrigin: '0% 0%',
@@ -28,23 +33,32 @@ export default ({palette}) => ({
     top: '-10px',
     left: '-10px',
     cursor: 'pointer',
-    opacity: '0' /* hide this */,
-    zIndex: '2' /* and place it over the hamburger */,
+    opacity: '0',
+    zIndex: '2',
     '-webkit-touch-callout': 'none',
     '&:checked': {
       transform: 'none',
     },
-    '&:checked span': {
+    '&:first-child': {
+      transformOrigin: '0% 0%',
+    },
+    '&:nth-last-child(2)': {
+      transformOrigin: '0% 100%',
+    },
+    '&:checked ~ span': {
       opacity: 1,
       transform: 'rotate(45deg) translate(-2px, -1px)',
-      background: '#232323',
+      background: palette.light,
     },
-    '&:checked span:nth-last-child(3)': {
+    '&:checked ~ span:nth-last-child(3)': {
       opacity: '0',
       transform: 'rotate(0deg) scale(0.2, 0.2)',
     },
-    '&:checked span:nth-last-child(2)': {
+    '&:checked ~ span:nth-last-child(2)': {
       transform: 'rotate(-45deg) translate(0, -1px)',
+    },
+    '&:checked ~ ul': {
+      transform: 'none',
     },
   },
   burger: {
@@ -53,7 +67,7 @@ export default ({palette}) => ({
     height: '4px',
     marginBottom: '5px',
     position: 'relative',
-    background: ' #cdcdcd',
+    background: palette.light,
     borderRadius: '3px',
     zIndex: '1',
     transformOrigin: '4px 0px',
@@ -61,11 +75,12 @@ export default ({palette}) => ({
   },
   menu: {
     position: 'absolute',
-    width: ' 300px',
+    width: '100%',
+    height: '100vh',
     margin: '-100px 0 0 -50px',
     padding: '50px',
     paddingTop: '125px',
-    background: '#ededed',
+    background: 'rgba(0, 0, 0, 0.4)',
     'list-style-type': 'none',
     '-webkit-font-smoothing': 'antialiased',
     transformOrigin: '0% 0%',
@@ -74,6 +89,26 @@ export default ({palette}) => ({
     '& li': {
       padding: '10px 0',
       fontSize: '22px',
+      '&::first-letter': {
+        textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
+        border: `1px solid ${palette.light}`,
+        padding: '0px 3px 3px 5px',
+        backgroundColor: palette.lightRed,
+      },
+      '&:hover': {
+        '& a': {
+          border: `1px solid ${palette.light}`,
+          padding: '0px 3px 3px 0px',
+          textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
+        },
+        '&::first-letter': {
+          backgroundColor: palette.light,
+          color: palette.lightRed,
+        },
+      },
+      '& a:hover': {
+        // color: palette.lightRed,
+      },
     },
   },
   activeLink: {

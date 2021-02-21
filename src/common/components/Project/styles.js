@@ -6,8 +6,8 @@ export default ({palette, breakpoints}) => ({
     justifyContent: 'space-evenly',
     alignItems: 'center',
     alignContent: 'center',
-    paddingTop: '12rem',
-    margin: '5vh auto 20vh auto',
+    paddingTop: '10rem',
+    margin: '0 auto 20vh auto',
   },
   article: {
     color: palette.light,
