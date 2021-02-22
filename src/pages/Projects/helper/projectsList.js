@@ -1,7 +1,27 @@
 import {cookMe, projetsDeDev, swapiDashboard, translationChromeExtension} from './logos'
-import chromeExtensionImage from 'common/assets/images/chromeExtension.png'
-import projetsDeDevImage from 'common/assets/images/projetsDeDev.png'
-import swapiImage from 'common/assets/images/swapi.png'
+// Chrome extension
+import chromeExtensionImage1 from 'common/assets/images/extension/translation1.png'
+import chromeExtensionImage2 from 'common/assets/images/extension/translation2.png'
+import chromeExtensionImage3 from 'common/assets/images/extension/translation3.png'
+import chromeExtensionImage4 from 'common/assets/images/extension/translation4.png'
+// Projets de dev
+import projetsDeDevImage1 from 'common/assets/images/projetsDeDev/projetsDeDev1.png'
+import projetsDeDevImage2 from 'common/assets/images/projetsDeDev/projetsDeDev2.png'
+import projetsDeDevImage3 from 'common/assets/images/projetsDeDev/projetsDeDev3.png'
+import projetsDeDevImage4 from 'common/assets/images/projetsDeDev/projetsDeDev4.png'
+import projetsDeDevImage5 from 'common/assets/images/projetsDeDev/projetsDeDev5.png'
+import projetsDeDevImage6 from 'common/assets/images/projetsDeDev/projetsDeDev6.png'
+import projetsDeDevImage7 from 'common/assets/images/projetsDeDev/projetsDeDev7.png'
+// Swapi
+import swapiImage1 from 'common/assets/images/swapi/swapi1.png'
+import swapiImage2 from 'common/assets/images/swapi/swapi2.png'
+// Cook me
+import cookMeImage1 from 'common/assets/images/cookMe/cookMe1.png'
+import cookMeImage2 from 'common/assets/images/cookMe/cookMe2.png'
+import cookMeImage3 from 'common/assets/images/cookMe/cookMe3.png'
+import cookMeImage4 from 'common/assets/images/cookMe/cookMe4.png'
+import cookMeImage5 from 'common/assets/images/cookMe/cookMe5.png'
+import cookMeImage6 from 'common/assets/images/cookMe/cookMe6.png'
 
 export default [
   {
@@ -20,8 +40,15 @@ export default [
       'Test unitaire',
     ],
     context: ' Projet de fin de formation',
-    imageUrl: projetsDeDevImage,
-    imagesUrl: [projetsDeDevImage, swapiImage],
+    imagesUrl: [
+      projetsDeDevImage1,
+      projetsDeDevImage2,
+      projetsDeDevImage3,
+      projetsDeDevImage4,
+      projetsDeDevImage5,
+      projetsDeDevImage6,
+      projetsDeDevImage7,
+    ],
   },
   {
     id: 2,
@@ -37,8 +64,7 @@ export default [
       'Insertion de la traduction après la sélection',
     ],
     context: ' Projet personnel',
-    imageUrl: chromeExtensionImage,
-    imagesUrl: [projetsDeDevImage, swapiImage],
+    imagesUrl: [chromeExtensionImage1, chromeExtensionImage2, chromeExtensionImage3, chromeExtensionImage4],
   },
   {
     id: 3,
@@ -52,8 +78,7 @@ export default [
       'Pagination et recherche',
     ],
     context: ' Projet personnel',
-    imageUrl: swapiImage,
-    imagesUrl: [projetsDeDevImage, swapiImage],
+    imagesUrl: [cookMeImage1, cookMeImage2, cookMeImage3, cookMeImage4, cookMeImage5, cookMeImage6],
   },
   {
     id: 4,
@@ -62,7 +87,6 @@ export default [
     description: 'Répertoire de données des personnages, planètes, véhicules et films de l’univers de Star Wars.',
     features: ["Utilisation de l'API Swapi", 'Affichage des ressources suivant la sélection', 'Liste paginable'],
     context: ' Projet personnel',
-    imageUrl: swapiImage,
-    imagesUrl: [projetsDeDevImage, swapiImage],
+    imagesUrl: [swapiImage1, swapiImage2],
   },
 ]

@@ -51,7 +51,7 @@ Project.propTypes = {
   description: string.isRequired,
   features: arrayOf(string.isRequired).isRequired,
   id: number.isRequired,
-  imageUrl: string.isRequired,
+  imagesUrl: arrayOf(string.isRequired).isRequired,
   logos: arrayOf(string.isRequired).isRequired,
   title: string.isRequired,
   ...classesProps,

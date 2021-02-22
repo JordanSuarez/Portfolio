@@ -31,9 +31,15 @@ export default ({palette, breakpoints}) => ({
     },
   },
   title: {
-    fontSize: '3rem',
+    fontSize: '2rem',
     fontWeight: '400',
     marginBottom: '1rem',
+    [breakpoints.up('xs')]: {
+      fontSize: '2.5rem',
+    },
+    [breakpoints.up('lg')]: {
+      fontSize: '3rem',
+    },
   },
   context: {
     display: 'block',
@@ -44,7 +50,14 @@ export default ({palette, breakpoints}) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-
+    '&:nth-child(odd)': {
+      [breakpoints.up('lg')]: {
+        alignItems: 'start',
+      },
+    },
+    [breakpoints.up('lg')]: {
+      alignItems: 'end',
+    },
     '& div': {
       display: 'flex',
       flexWrap: 'wrap',
