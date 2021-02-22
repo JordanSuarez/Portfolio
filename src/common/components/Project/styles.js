@@ -6,11 +6,14 @@ export default ({palette, breakpoints}) => ({
     justifyContent: 'space-evenly',
     alignItems: 'center',
     alignContent: 'center',
-    paddingTop: '3rem',
-    margin: '0 auto',
+    paddingBottom: '5rem',
+    margin: '5rem auto 0',
+    '&:nth-child(odd)': {
+      flexDirection: 'row',
+    },
     [breakpoints.up('lg')]: {
-      paddingTop: '10rem',
-      margin: '0 auto 20vh auto',
+      paddingTop: '0',
+      margin: '8rem auto 7rem',
     },
   },
   article: {
@@ -67,7 +70,18 @@ export default ({palette, breakpoints}) => ({
     borderRadius: '1rem',
     backgroundColor: palette.lightRed,
   },
-  cardContainer: {
-    padding: '0 1.6rem 0 1rem',
+  sliderContainer: {
+    width: '90%',
+    marginTop: '2rem',
+    [breakpoints.up('sm')]: {
+      width: '80%',
+    },
+    [breakpoints.up('md')]: {
+      width: '60%',
+    },
+    [breakpoints.up('lg')]: {
+      width: '40%',
+      marginTop: '0',
+    },
   },
 })

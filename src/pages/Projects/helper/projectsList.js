@@ -21,6 +21,7 @@ export default [
     ],
     context: ' Projet de fin de formation',
     imageUrl: projetsDeDevImage,
+    imagesUrl: [projetsDeDevImage, swapiImage],
   },
   {
     id: 2,
@@ -37,6 +38,7 @@ export default [
     ],
     context: ' Projet personnel',
     imageUrl: chromeExtensionImage,
+    imagesUrl: [projetsDeDevImage, swapiImage],
   },
   {
     id: 3,
@@ -51,6 +53,7 @@ export default [
     ],
     context: ' Projet personnel',
     imageUrl: swapiImage,
+    imagesUrl: [projetsDeDevImage, swapiImage],
   },
   {
     id: 4,
@@ -60,5 +63,6 @@ export default [
     features: ["Utilisation de l'API Swapi", 'Affichage des ressources suivant la sélection', 'Liste paginable'],
     context: ' Projet personnel',
     imageUrl: swapiImage,
+    imagesUrl: [projetsDeDevImage, swapiImage],
   },
 ]
