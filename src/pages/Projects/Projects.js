@@ -10,7 +10,7 @@ import projectsList from './helper/projectsList'
 const Projects = ({classes}) => (
   <Base classes={classes.root}>
     <Jump>
-      <h1 className={classes.title}>Mes Créations</h1>
+      <h1 className={classes.title}>Réalisations</h1>
     </Jump>
     <div className={classes.wrapper}>
       {projectsList.map((project) => (

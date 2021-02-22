@@ -24,13 +24,35 @@ export default ({palette, font}) => ({
       willChange: 'transform',
     },
   },
+  bracket: {
+    color: palette.lightRed,
+    display: 'inline-block',
+    animation: '$moveItBack 900ms ease forwards',
+    willChange: 'transform',
+    '&:hover': {
+      color: palette.light,
+      animation: '$moveIt 1.5s ease forwards',
+      willChange: 'transform',
+    },
+  },
   primaryLetter: {
     textShadow: `-6px 1px 0px ${palette.lightRed}`,
     border: `1px solid ${palette.light}`,
     padding: '0px 3px 5px 10px',
   },
-  description: {
+  subtitle: {
+    color: palette.light,
     fontSize: '2rem',
+    textAlign: 'center',
+  },
+  description: {
+    width: '30rem',
+    margin: '2rem auto',
+    textAlign: 'justify',
+    color: palette.light,
+    background: '#95959a24',
+    borderRadius: '6px',
+    padding: ' 1rem',
   },
   '@keyframes moveIt': {
     '0%': {
