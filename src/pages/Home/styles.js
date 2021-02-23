@@ -1,10 +1,10 @@
-export default ({palette, font}) => ({
+export default ({palette, font, breakpoints}) => ({
   titleWrapper: {
     textAlign: 'center',
     color: palette.light,
     '-webkit-touch-callout': 'none',
     '-webkit-user-select': 'none',
-    '-khtml-user-select': 'none',
+    '-html-user-select': 'none',
     '-moz-user-select': 'none',
     '-ms-user-select': 'none',
     'user-select': 'none',
@@ -13,6 +13,12 @@ export default ({palette, font}) => ({
     fontFamily: font.title,
     fontWeight: 'bold',
     fontSize: '4rem',
+    [breakpoints.down('sm')]: {
+      fontSize: '3rem',
+    },
+    [breakpoints.down('xs')]: {
+      fontSize: '2rem',
+    },
   },
   letter: {
     display: 'inline-block',
@@ -26,13 +32,8 @@ export default ({palette, font}) => ({
   },
   bracket: {
     color: palette.lightRed,
-    display: 'inline-block',
-    animation: '$moveItBack 900ms ease forwards',
-    willChange: 'transform',
     '&:hover': {
       color: palette.light,
-      animation: '$moveIt 1.5s ease forwards',
-      willChange: 'transform',
     },
   },
   primaryLetter: {
@@ -44,6 +45,12 @@ export default ({palette, font}) => ({
     color: palette.light,
     fontSize: '2rem',
     textAlign: 'center',
+    [breakpoints.down('sm')]: {
+      fontSize: '1.5rem',
+    },
+    [breakpoints.down('xs')]: {
+      fontSize: '1rem',
+    },
   },
   description: {
     width: '30rem',
@@ -53,6 +60,23 @@ export default ({palette, font}) => ({
     background: '#95959a24',
     borderRadius: '6px',
     padding: ' 1rem',
+  },
+  link: {
+    '& img': {
+      transition: '.2s ease-in-out',
+      [breakpoints.down('xs')]: {
+        width: '10rem',
+      },
+      '&:hover': {
+        transition: '.2s ease-in-out',
+        transform: 'scale(1.1)',
+      },
+    },
+  },
+  redirection: {
+    position: 'absolute',
+    right: '1rem',
+    bottom: '1rem',
   },
   '@keyframes moveIt': {
     '0%': {

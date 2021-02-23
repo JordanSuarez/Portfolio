@@ -1,22 +1,23 @@
 .button--nanuk {
     padding: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 2rem;
     overflow: hidden;
-    background: #ce6262;
+    background: #1B2886;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     color: #f6f5f5;
-}
-.button--nanuk.button--inverted {
-    background: #fff;
-    color: #064462;
+    text-transform: uppercase;
+    outline: none;
 }
 .button--nanuk > span {
     display: inline-block;
 }
-.button--nanuk:hover {
+.button--nanuk:active {
     background-color: white;
+}
+.button--nanuk:hover {
+    background-color: #ce6262;
 }
 .button--nanuk:hover > span:nth-child(odd) {
     -webkit-animation: anim-nanuk-1 0.5s forwards;
@@ -37,28 +38,33 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     100% {
-        color: #064462;
+        color: #f6f5f5;
+
     }
 }
 @keyframes anim-nanuk-1 {
@@ -67,28 +73,33 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #064462;
+        color: #f6f5f5;
+
     }
     100% {
-        color: #064462;
+        color: #f6f5f5;
+
     }
 }
 @-webkit-keyframes anim-nanuk-2 {
@@ -97,28 +108,28 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     100% {
-        color: #064462;
+        color: #f6f5f5;
     }
 }
 @keyframes anim-nanuk-2 {
@@ -127,28 +138,28 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #064462;
+        color: #f6f5f5;
     }
     100% {
-        color: #064462;
+        color: #f6f5f5;
     }
 }
 .button--nanuk:hover > span:nth-child(1) {

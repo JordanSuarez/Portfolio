@@ -8,7 +8,6 @@ export default ({palette, breakpoints}) => ({
     position: 'absolute',
     top: '1.7rem',
     right: '0.6rem',
-    backgroundColor: palette.firstDarkBlue,
     zIndex: '0',
     fontSize: '1.4rem',
     '&::first-letter': {

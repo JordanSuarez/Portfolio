@@ -1,4 +1,4 @@
-export default ({palette}) => ({
+export default ({palette, breakpoints}) => ({
   menuToggle: {
     display: 'block',
     position: 'relative',
@@ -14,6 +14,9 @@ export default ({palette}) => ({
       color: palette.light,
       transition: 'color 0.3s ease',
       fontSize: '2.5rem',
+      [breakpoints.down('xs')]: {
+        fontSize: '2rem',
+      },
     },
     '& span:first-child': {
       transformOrigin: '0% 0%',
@@ -77,7 +80,7 @@ export default ({palette}) => ({
     margin: '-100px 0 0 -50px',
     padding: '50px',
     paddingTop: '125px',
-    background: 'rgb(2 17 35 / 82%)',
+    background: 'rgb(11 45 86 / 82%)',
     'list-style-type': 'none',
     '-webkit-font-smoothing': 'antialiased',
     transformOrigin: '0% 0%',
