@@ -1,24 +1,17 @@
 import React from 'react'
 
-import Jump from 'react-reveal/Jump'
-
 import {classes as classesProps} from 'common/classes'
-import Base from 'common/components/Base'
+import Page from 'common/components/Page'
 import Project from 'common/components/Project'
 import projectsList from './helper/projectsList'
 
-const Projects = ({classes}) => (
-  <Base classes={classes.root}>
-    <Jump>
-      <h1 className={classes.title}>Réalisations</h1>
-    </Jump>
-    <div className={classes.wrapper}>
-      {projectsList.map((project) => (
-        // eslint-disable-next-line react/jsx-props-no-spreading
-        <Project {...project} key={project.id} />
-      ))}
-    </div>
-  </Base>
+const Projects = () => (
+  <Page title="Réalisations">
+    {projectsList.map((project) => (
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      <Project {...project} key={project.id} />
+    ))}
+  </Page>
 )
 
 Projects.propTypes = {

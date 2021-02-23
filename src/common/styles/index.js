@@ -5,7 +5,7 @@ const palette = {
   light: '#f6f5f5',
   // firstDarkBlue: '#00334e',
   firstDarkBlue: '#011832',
-  secondDarkBlue: '#214252',
+  secondDarkBlue: '#141C88',
   mediumBlue: '#145374',
   red: '#af2d2d',
   lightRed: '#ce6262',

@@ -89,24 +89,32 @@ export default ({palette, breakpoints}) => ({
     '& li': {
       padding: '10px 0',
       fontSize: '22px',
+      fontWeight: '400',
+      width: 'fit-content',
       '&::first-letter': {
-        textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
+        textShadow: `-3px 1px 0px ${palette.lightRed}`,
         border: `1px solid ${palette.light}`,
-        padding: '0px 3px 3px 5px',
-        backgroundColor: palette.lightRed,
+        padding: '1px 6px 5px 10px',
+        margin: '6rem -5px',
+        '&:hover': {
+          color: palette.light,
+        },
+        '& a': {
+          padding: '15px 20px',
+        },
       },
       '&:hover': {
         '& a': {
-          textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
-        },
-        '&::first-letter': {
-          backgroundColor: palette.light,
-          color: palette.lightRed,
+          borderBottom: `3px solid ${palette.light}`,
+          padding: '3px 5px',
+          transition: 'all 0.3s ease-in-out',
         },
       },
     },
   },
   activeLink: {
-    color: palette.red,
+    borderBottom: `3px solid ${palette.light}`,
+    padding: '3px 5px',
+    transition: 'all 0.5s ease-in-out',
   },
 })

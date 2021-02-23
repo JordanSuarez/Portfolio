@@ -13,7 +13,7 @@ export default (values) => {
   if (validationEmail === false) {
     errors.email = 'Adresse email invalide'
   }
-
+  console.log(values)
   if (!values.name) {
     errors.name = 'Ce champ est requis'
   }

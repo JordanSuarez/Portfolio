@@ -1,53 +1,47 @@
 export default ({palette}) => ({
   container: {
-    padding: '3em 10px 3em 10px',
-  },
-
-  content: {
-    margin: '0 auto',
-    maxWidth: '400px',
+    margin: '5rem auto 0',
+    maxWidth: '20rem',
     backgroundColor: palette.white,
-    padding: '1.5em 1.5em',
+    padding: '1.5rem 1.5rem',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '25rem',
   },
-
   formTitle: {
-    fontSize: '1.3em',
-    padding: '0.5em 0',
-    color: palette.firstDarkBlue,
+    fontSize: '1.3rem',
+    padding: '0.5rem',
+    color: palette.light,
   },
-
-  textfield: {
-    marginBottom: '0.5em',
+  textField: {
+    marginBottom: '0.5rem',
+    width: '100%',
     '& .MuiFormLabel-root.Mui-focused': {
-      color: palette.firstDarkBlue,
+      color: palette.secondDarkBlue,
     },
     '& .MuiInput-underline:after': {
-      borderColor: palette.firstDarkBlue,
+      borderColor: palette.secondDarkBlue,
     },
   },
-
   submit: {
     textTransform: 'initial',
     backgroundColor: palette.firstDarkBlue,
     color: palette.white,
     margin: '2em 0 2em auto',
     '&:hover': {
-      color: palette.blue,
-      backgroundColor: palette.firstDarkBlue,
+      color: palette.light,
+      backgroundColor: palette.secondDarkBlue,
     },
   },
-
   containerButton: {
     display: 'flex',
     justifyContent: 'flex-end',
     flexDirection: 'column',
   },
-
   login: {
     textAlign: 'right',
     color: palette.firstDarkBlue,
   },
-
   image: {
     height: '400px',
     width: '100%',

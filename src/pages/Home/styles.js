@@ -13,6 +13,7 @@ export default ({palette, font, breakpoints}) => ({
     fontFamily: font.title,
     fontWeight: 'bold',
     fontSize: '4rem',
+    textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
     [breakpoints.down('sm')]: {
       fontSize: '3rem',
     },
@@ -37,9 +38,11 @@ export default ({palette, font, breakpoints}) => ({
     },
   },
   primaryLetter: {
-    textShadow: `-6px 1px 0px ${palette.lightRed}`,
+    textShadow: `-4px 1px 0px ${palette.lightRed}`,
     border: `1px solid ${palette.light}`,
-    padding: '0px 3px 5px 10px',
+    // padding: '0px 3px 5px 10px',
+    padding: '1px 6px 5px 10px',
+    margin: '6rem -5px',
   },
   subtitle: {
     color: palette.light,
