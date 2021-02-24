@@ -40,7 +40,6 @@ const Contact = ({classes}) => {
       user_id: userId,
       template_id: templateId,
       template_params: {
-        date: Date.now(),
         name,
         email,
         message,
