@@ -3,9 +3,10 @@ import {createMuiTheme} from '@material-ui/core'
 const palette = {
   white: '#ffffff',
   light: '#f6f5f5',
-  firstDarkBlue: '#00334e',
-  secondDarkBlue: '#214252',
-  mediumBlue: '#145374',
+  lightBlue: '#e8f0fe',
+  firstDarkBlue: '#011832',
+  secondDarkBlue: '#141C88',
+  mediumBlue: '#1c2886',
   red: '#af2d2d',
   lightRed: '#ce6262',
   orange: '#ee6f57',
@@ -18,10 +19,10 @@ const font = {
 
 const breakpoints = {
   values: {
-    xs: 0,
-    sm: 500,
+    xs: 335,
+    sm: 535,
     md: 960,
-    lg: 1280,
+    lg: 1100,
     xl: 1920,
   },
 }
