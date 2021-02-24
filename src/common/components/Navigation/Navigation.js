@@ -3,13 +3,15 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 import {classes as classesProps} from 'common/classes'
-import {getAboutRoute, getHomeRoute, getProjectRoute} from 'common/routing/routesResolver'
+import {getContactRoute, getHomeRoute, getProjectRoute} from 'common/routing/routesResolver'
+import cvPdf from 'common/assets/CV.pdf'
 
 const Navigation = ({classes}) => {
   const routes = [
     {name: 'Accueil', route: getHomeRoute()},
-    {name: 'Mes créations', route: getProjectRoute(1)},
-    {name: 'En savoir plus', route: getAboutRoute()},
+    {name: 'Réalisations', route: getProjectRoute(1)},
+    {name: 'Contact', route: getContactRoute()},
+    {name: 'Mon CV', route: cvPdf},
   ]
 
   return (
@@ -22,9 +24,15 @@ const Navigation = ({classes}) => {
         <ul className={classes.menu}>
           {routes.map(({name, route}) => (
             <li key={name}>
-              <NavLink to={route} activeClassName={classes.activeLink} exact className={classes.link}>
-                {name}
-              </NavLink>
+              {name === 'Mon CV' ? (
+                <a href={route} target="_blank" rel="noreferrer">
+                  {name}
+                </a>
+              ) : (
+                <NavLink to={route} activeClassName={classes.activeLink} exact className={classes.link}>
+                  {name}
+                </NavLink>
+              )}
             </li>
           ))}
         </ul>

@@ -1,4 +1,4 @@
-export default ({palette}) => ({
+export default ({palette, breakpoints}) => ({
   menuToggle: {
     display: 'block',
     position: 'relative',
@@ -14,6 +14,9 @@ export default ({palette}) => ({
       color: palette.light,
       transition: 'color 0.3s ease',
       fontSize: '2.5rem',
+      [breakpoints.down('xs')]: {
+        fontSize: '2rem',
+      },
     },
     '& span:first-child': {
       transformOrigin: '0% 0%',
@@ -77,33 +80,43 @@ export default ({palette}) => ({
     margin: '-100px 0 0 -50px',
     padding: '50px',
     paddingTop: '125px',
-    background: 'rgb(2 17 35 / 82%)',
+    background: 'rgb(11 45 86 / 82%)',
     'list-style-type': 'none',
     '-webkit-font-smoothing': 'antialiased',
     transformOrigin: '0% 0%',
     transform: 'translate(-100%, 0)',
     transition: 'transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)',
     '& li': {
-      padding: '10px 0',
+      padding: '10px 5px',
       fontSize: '22px',
+      fontWeight: '400',
+      width: 'fit-content',
       '&::first-letter': {
-        textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
+        textShadow: `-3px 1px 0px ${palette.lightRed}`,
         border: `1px solid ${palette.light}`,
-        padding: '0px 3px 3px 5px',
-        backgroundColor: palette.lightRed,
+        padding: '1px 6px 5px 10px',
+        margin: '6rem -5px',
+        '&:hover': {
+          color: palette.light,
+        },
+        '& a': {
+          padding: '15px 20px',
+        },
+      },
+      '& a': {
+        transition: 'all 0.3s ease-in-out',
       },
       '&:hover': {
         '& a': {
-          textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
-        },
-        '&::first-letter': {
-          backgroundColor: palette.light,
-          color: palette.lightRed,
+          borderBottom: `3px solid ${palette.light}`,
+          padding: '3px 5px',
+          transition: 'all 0.3s ease-in-out',
         },
       },
     },
   },
   activeLink: {
-    color: palette.red,
+    borderBottom: `3px solid ${palette.light}`,
+    padding: '3px 5px',
   },
 })

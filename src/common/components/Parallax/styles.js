@@ -1,4 +1,4 @@
-export default () => ({
+export default ({breakpoints}) => ({
   container: {
     height: '100vh',
     display: 'flex',
@@ -7,41 +7,45 @@ export default () => ({
     position: 'relative',
   },
   shapes: {
-    // position: 'absolute',
-    // borderRadius: '5px',
-    // backgroundSize: 'cover',
-    // backgroundPosition: 'center center',
-    // backgroundRepeat: 'no-repeat',
-    // willChange: 'transform',
+    position: 'absolute',
+    top: '30%',
+    willChange: 'transform',
   },
-  firstShape: {
-    // minWidth: '60ch',
-    // minHeight: '60ch',
-    // width: '45vw',
-    // height: '45vw',
-    // maxWidth: '100ch',
-    // maxHeight: '100ch',
+  title: {
+    [breakpoints.down('sm')]: {
+      top: '30%',
+    },
+    [breakpoints.down('xs')]: {
+      top: '35%',
+    },
   },
-  // secondShape: {
-  //   top: '18rem',
-  //   right: '15rem',
-  //   width: '25ch',
-  //   height: '25ch',
-  //   background: 'rgb(26,0,3) linear-gradient(14deg, rgba(26,0,3,1) 0%, rgba(0,51,78,1) 41%, rgba(206,98,98,1) 92%)',
-  //   borderRadius: '50%',
-  // },
-  // thirdShape: {
-  //   opacity: 0.9,
-  //   width: 'O',
-  //   height: 'O',
-  //   borderTop: '50px solid transparent',
-  //   borderRight: '100px solid red',
-  //   borderBottom: '50px solid transparent',
-  //   background: 'rgb(246,245,245) linear-gradient(14deg, rgba(246,245,245,1) 5%, rgba(206,98,98,1) 61%, rgba(0,51,78,1) 100%)',
-  // },
-  // fourthShape: {
-  //   width: '25ch',
-  //   height: '25ch',
-  //   backgroundImage: 'url(https://image.flaticon.com/icons/svg/789/789392.svg)',
-  // },
+  moon: {
+    [breakpoints.down('md')]: {
+      right: '50%',
+    },
+    [breakpoints.down('sm')]: {
+      right: '60%',
+    },
+    [breakpoints.down('xs')]: {
+      right: '70%',
+    },
+  },
+  githubLink: {
+    [breakpoints.down('md')]: {
+      left: '40%',
+    },
+    [breakpoints.down('xs')]: {
+      left: '60%',
+      top: '38%',
+    },
+  },
+  linkedinLink: {
+    [breakpoints.down('md')]: {
+      right: '40%',
+    },
+    [breakpoints.down('xs')]: {
+      right: '60%',
+      top: '25%',
+    },
+  },
 })
