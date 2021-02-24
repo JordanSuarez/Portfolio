@@ -1,50 +1,61 @@
-export default ({palette}) => ({
+export default ({palette, breakpoints}) => ({
   container: {
-    margin: '5rem auto 0',
-    maxWidth: '20rem',
-    backgroundColor: palette.white,
+    margin: '2rem auto 0',
+    maxWidth: '25rem',
     padding: '1.5rem 1.5rem',
     display: 'flex',
     flexDirection: 'column',
-    height: '25rem',
+    [breakpoints.down('xs')]: {
+      width: '100%',
+      maxWidth: 'unset',
+    },
+    '& form': {
+      display: 'flex',
+      flexDirection: 'column',
+      width: '25rem',
+      height: '30rem',
+      justifyContent: 'space-evenly',
+      [breakpoints.down('xs')]: {
+        width: 'auto',
+        maxWidth: 'unset',
+      },
+    },
   },
   formTitle: {
-    fontSize: '1.3rem',
+    fontSize: '1.5rem',
     padding: '0.5rem',
+    fontWeight: '400',
     color: palette.light,
+    [breakpoints.down('sm')]: {
+      textAlign: 'center',
+    },
   },
   textField: {
-    marginBottom: '0.5rem',
+    marginBottom: '2rem',
     width: '100%',
-    '& .MuiFormLabel-root.Mui-focused': {
-      color: palette.secondDarkBlue,
-    },
-    '& .MuiInput-underline:after': {
-      borderColor: palette.secondDarkBlue,
-    },
-  },
-  submit: {
-    textTransform: 'initial',
-    backgroundColor: palette.firstDarkBlue,
-    color: palette.white,
-    margin: '2em 0 2em auto',
-    '&:hover': {
-      color: palette.light,
-      backgroundColor: palette.secondDarkBlue,
-    },
-  },
-  containerButton: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    flexDirection: 'column',
-  },
-  login: {
-    textAlign: 'right',
     color: palette.firstDarkBlue,
-  },
-  image: {
-    height: '400px',
-    width: '100%',
-    objectFit: 'cover',
+    '& .MuiFilledInput-multiline': {
+      padding: '0',
+    },
+    '& .MuiInputBase-input': {
+      padding: '27px 12px 10px',
+      backgroundColor: palette.lightBlue,
+      borderRadius: '5px',
+      position: 'relative',
+      '&:focus': {
+        backgroundColor: palette.light,
+      },
+    },
+    '& .MuiFormHelperText-root.Mui-error': {
+      color: palette.lightRed,
+    },
+    '& .MuiFormLabel-root.Mui-error': {
+      color: palette.lightRed,
+    },
+    '& p': {
+      position: 'absolute',
+      bottom: '-1.3rem',
+      fontSize: '0.8rem',
+    },
   },
 })

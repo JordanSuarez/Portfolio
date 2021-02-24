@@ -87,7 +87,7 @@ export default ({palette, breakpoints}) => ({
     transform: 'translate(-100%, 0)',
     transition: 'transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)',
     '& li': {
-      padding: '10px 0',
+      padding: '10px 5px',
       fontSize: '22px',
       fontWeight: '400',
       width: 'fit-content',
@@ -103,6 +103,9 @@ export default ({palette, breakpoints}) => ({
           padding: '15px 20px',
         },
       },
+      '& a': {
+        transition: 'all 0.3s ease-in-out',
+      },
       '&:hover': {
         '& a': {
           borderBottom: `3px solid ${palette.light}`,
@@ -115,6 +118,5 @@ export default ({palette, breakpoints}) => ({
   activeLink: {
     borderBottom: `3px solid ${palette.light}`,
     padding: '3px 5px',
-    transition: 'all 0.5s ease-in-out',
   },
 })

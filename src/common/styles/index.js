@@ -3,6 +3,7 @@ import {createMuiTheme} from '@material-ui/core'
 const palette = {
   white: '#ffffff',
   light: '#f6f5f5',
+  lightBlue: '#e8f0fe',
   // firstDarkBlue: '#00334e',
   firstDarkBlue: '#011832',
   secondDarkBlue: '#141C88',

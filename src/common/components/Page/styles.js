@@ -14,7 +14,7 @@ export default ({palette, breakpoints}) => ({
       textShadow: `-3px 1px 0px ${palette.lightRed}`,
       border: `1px solid ${palette.light}`,
       padding: '1px 6px 5px 10px',
-      margin: '6rem -5px',
+      margin: '6rem -4px',
     },
     [breakpoints.up('xs')]: {
       fontSize: '2rem',

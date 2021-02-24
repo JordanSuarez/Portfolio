@@ -5,11 +5,11 @@ import {v4 as uuid} from 'uuid'
 import './styles.css'
 import {classes as classesProps} from 'common/classes'
 
-const Button = ({label}) => {
+const Button = ({label, classes}) => {
   const splitLabel = label.split('')
 
   return (
-    <div className="box bg-1">
+    <div className={classes.container}>
       <button type="button" className="button button--nanuk button--text-thick button--text-upper button--size-s button--border-thick">
         {splitLabel.map((letter) => {
           if (letter === ' ') {

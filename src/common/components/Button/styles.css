@@ -1,7 +1,7 @@
 .button--nanuk {
-    padding: 1rem;
+    padding: 0.7rem 1rem;
     border: none;
-    border-radius: 2rem;
+    border-radius: 5px;
     overflow: hidden;
     background: #1B2886;
     -webkit-transition: background-color 0.3s;
@@ -17,7 +17,7 @@
     background-color: white;
 }
 .button--nanuk:hover {
-    background-color: #ce6262;
+    background-color: white;
 }
 .button--nanuk:hover > span:nth-child(odd) {
     -webkit-animation: anim-nanuk-1 0.5s forwards;
@@ -38,32 +38,37 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     100% {
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
 }
@@ -73,32 +78,37 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
     100% {
-        color: #f6f5f5;
+        color: #1B2886;
+
 
     }
 }
@@ -108,28 +118,33 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     100% {
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
 }
 @keyframes anim-nanuk-2 {
@@ -138,28 +153,33 @@
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     49% {
         opacity: 1;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     50% {
         opacity: 0;
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     51% {
         opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
     100% {
-        color: #f6f5f5;
+        color: #1B2886;
+
     }
 }
 .button--nanuk:hover > span:nth-child(1) {

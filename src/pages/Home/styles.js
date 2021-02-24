@@ -40,7 +40,6 @@ export default ({palette, font, breakpoints}) => ({
   primaryLetter: {
     textShadow: `-4px 1px 0px ${palette.lightRed}`,
     border: `1px solid ${palette.light}`,
-    // padding: '0px 3px 5px 10px',
     padding: '1px 6px 5px 10px',
     margin: '6rem -5px',
   },
@@ -54,15 +53,6 @@ export default ({palette, font, breakpoints}) => ({
     [breakpoints.down('xs')]: {
       fontSize: '1rem',
     },
-  },
-  description: {
-    width: '30rem',
-    margin: '2rem auto',
-    textAlign: 'justify',
-    color: palette.light,
-    background: '#95959a24',
-    borderRadius: '6px',
-    padding: ' 1rem',
   },
   link: {
     '& img': {
