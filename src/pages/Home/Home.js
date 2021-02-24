@@ -59,7 +59,7 @@ const Home = ({classes}) => {
       <Parallax {...children} />
       <div className={classes.redirection}>
         <Link to={getProjectRoute()}>
-          <Button label={label} />
+          <Button label={label} type="button" />
         </Link>
       </div>
     </Base>

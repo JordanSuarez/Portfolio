@@ -45,7 +45,11 @@ const Parallax = ({title, subtitle, githubLink, linkedinLink, moon, classes}) =>
 }
 
 Parallax.propTypes = {
-  children: node.isRequired,
+  githubLink: node.isRequired,
+  linkedinLink: node.isRequired,
+  moon: node.isRequired,
+  subtitle: node.isRequired,
+  title: node.isRequired,
   ...classesProps,
 }
 

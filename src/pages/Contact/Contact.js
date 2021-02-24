@@ -7,8 +7,9 @@ import linkedinLogo from 'common/assets/images/logo/linkedin.png'
 import Page from 'common/components/Page'
 
 const Contact = ({classes}) => {
-  const onSubmit = (values) => {
+  const onFormSubmit = (values) => {
     console.log(values)
+    // TODO send values to EmailJs, and add feedback if 200
   }
 
   return (
@@ -34,7 +35,7 @@ const Contact = ({classes}) => {
               </a>
             </li>
           </ul>
-          <ContactForm onSubmit={onSubmit} />
+          <ContactForm onFormSubmit={onFormSubmit} />
         </section>
       </div>
     </Page>

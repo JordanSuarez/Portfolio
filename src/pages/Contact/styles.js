@@ -31,7 +31,7 @@ export default ({palette, breakpoints}) => ({
       alignItems: 'end',
       margin: '3rem auto 0',
       padding: '2rem 1rem',
-      borderTop: `1px solid ${palette.lightRed}`,
+      borderTop: `3px solid ${palette.lightRed}`,
     },
     '& li': {
       display: 'flex',

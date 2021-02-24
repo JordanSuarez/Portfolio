@@ -32,7 +32,7 @@ export default ({palette, breakpoints}) => ({
     },
     '& img': {
       position: 'absolute',
-      top: '-2rem',
+      top: '-3rem',
       right: '-2rem',
       width: '5rem',
       zIndex: '1',
@@ -65,5 +65,19 @@ export default ({palette, breakpoints}) => ({
       bottom: '-1.3rem',
       fontSize: '0.8rem',
     },
+  },
+  captcha: {
+    position: 'relative',
+    '& < div': {
+      margin: 'auto',
+    },
+  },
+  errorMessage: {
+    position: 'absolute',
+    color: palette.lightRed,
+    fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+    bottom: '-1rem',
+    fontSize: '0.8rem',
+    margin: '0 14px',
   },
 })
