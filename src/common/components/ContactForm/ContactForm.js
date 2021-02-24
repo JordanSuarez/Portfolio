@@ -5,6 +5,7 @@ import {TextField} from 'mui-rff'
 
 import {classes as classesProps} from 'common/classes'
 import Button from 'common/components/Button'
+import plane1 from 'common/assets/images/logo/plane1.png'
 import validate from './validation'
 
 const Contact = ({classes, onSubmit}) => (
@@ -26,7 +27,9 @@ const Contact = ({classes, onSubmit}) => (
           // }}
           onSubmit={handleSubmit}
           noValidate
+          className={classes.form}
         >
+          <img src={plane1} alt="repository github" className={classes.logo} />
           <TextField
             className={classes.textField}
             type="text"

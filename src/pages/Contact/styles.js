@@ -47,15 +47,15 @@ export default ({palette, breakpoints}) => ({
         '&:hover': {
           textDecoration: 'underline',
         },
-      },
-    },
-    '& img': {
-      width: '2.5rem',
-      margin: '0.5rem',
-      transition: '.2s ease-in-out',
-      '&:hover': {
-        transition: '.2s ease-in-out',
-        transform: 'scale(1.2)',
+        '& img': {
+          width: '2.5rem',
+          margin: '0.5rem',
+          transition: '.2s ease-in-out',
+          '&:hover': {
+            transition: '.2s ease-in-out',
+            transform: 'scale(1.2)',
+          },
+        },
       },
     },
   },

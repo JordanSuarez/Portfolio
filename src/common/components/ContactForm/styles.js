@@ -9,17 +9,6 @@ export default ({palette, breakpoints}) => ({
       width: '100%',
       maxWidth: 'unset',
     },
-    '& form': {
-      display: 'flex',
-      flexDirection: 'column',
-      width: '25rem',
-      height: '30rem',
-      justifyContent: 'space-evenly',
-      [breakpoints.down('xs')]: {
-        width: 'auto',
-        maxWidth: 'unset',
-      },
-    },
   },
   formTitle: {
     fontSize: '1.5rem',
@@ -28,6 +17,25 @@ export default ({palette, breakpoints}) => ({
     color: palette.light,
     [breakpoints.down('sm')]: {
       textAlign: 'center',
+    },
+  },
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '25rem',
+    height: '30rem',
+    justifyContent: 'space-evenly',
+    position: 'relative',
+    [breakpoints.down('xs')]: {
+      width: 'auto',
+      maxWidth: 'unset',
+    },
+    '& img': {
+      position: 'absolute',
+      top: '-2rem',
+      right: '-2rem',
+      width: '5rem',
+      zIndex: '1',
     },
   },
   textField: {
