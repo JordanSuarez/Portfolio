@@ -64,7 +64,7 @@ const Contact = ({classes}) => {
       })
   }
 
-  // Submit form
+  // Captcha values
   const onChangeCaptcha = (values) => {
     setCaptcha(values)
   }
@@ -87,15 +87,15 @@ const Contact = ({classes}) => {
               <a href={githubUrl} target="_blank" rel="noreferrer">
                 Consultez mon profil Github
               </a>
-              <a href={linkedinUrl} target="_blank" rel="noreferrer">
+              <a href={githubUrl} target="_blank" rel="noreferrer">
                 <img src={githubLogo} alt="profil github" />
               </a>
             </li>
             <li>
-              <a href="*" target="_blank" rel="noreferrer">
+              <a href={linkedinUrl} target="_blank" rel="noreferrer">
                 Retrouvez-moi sur Linkedin
               </a>
-              <a href="*" target="_blank" rel="noreferrer">
+              <a href={linkedinUrl} target="_blank" rel="noreferrer">
                 <img src={linkedinLogo} alt="profil linkedin" />
               </a>
             </li>

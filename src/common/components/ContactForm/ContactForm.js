@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import {bool, func} from 'prop-types'
+import {bool, func, string} from 'prop-types'
 import {Form} from 'react-final-form'
 import {TextField} from 'mui-rff'
 import Button from '@material-ui/core/Button'
@@ -84,7 +84,7 @@ const Contact = ({classes, onSubmit, onChangeCaptcha, submitting, captcha}) => {
 }
 
 Contact.propTypes = {
-  captchaError: bool.isRequired,
+  captcha: string.isRequired,
   onChangeCaptcha: func.isRequired,
   onSubmit: func.isRequired,
   submitting: bool.isRequired,
