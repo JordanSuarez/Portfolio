@@ -25,6 +25,7 @@ export default ({palette, breakpoints}) => ({
     margin: 'auto',
     padding: '1rem',
     flexWrap: 'wrap',
+    position: 'relative',
     '& ul': {
       display: 'flex',
       flexDirection: 'column',
@@ -58,5 +59,8 @@ export default ({palette, breakpoints}) => ({
         },
       },
     },
+  },
+  snackbar: {
+    margin: 'auto',
   },
 })

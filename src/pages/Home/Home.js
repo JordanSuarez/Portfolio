@@ -12,8 +12,9 @@ import moonLogo from 'common/assets/images/logo/moon.png'
 import Parallax from 'common/components/Parallax'
 
 const Home = ({classes}) => {
-  const githubUrl = 'https://github.com/JordanSuarez'
-  const linkedinUrl = 'https://www.linkedin.com/in/jordan-suarez/'
+  const githubUrl = process.env.REACT_APP_GITHUB
+  const linkedinUrl = process.env.REACT_APP_LINKEDIN
+
   const subtitle = '- Développeur Web Front End -'
   const label = 'Mes réalisations'
 

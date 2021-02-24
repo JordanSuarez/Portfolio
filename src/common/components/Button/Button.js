@@ -9,6 +9,8 @@ import {classes as classesProps} from 'common/classes'
 const Button = ({label, type, disabled, onClick, classes}) => {
   const splitLabel = label.split('')
 
+  console.log(disabled)
+
   return (
     <div className={classes.container}>
       <button

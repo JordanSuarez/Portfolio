@@ -26,9 +26,11 @@ export default ({palette, breakpoints}) => ({
     height: '30rem',
     justifyContent: 'space-evenly',
     position: 'relative',
+    alignItems: 'flex-start',
     [breakpoints.down('xs')]: {
       width: 'auto',
       maxWidth: 'unset',
+      alignItems: 'center',
     },
     '& img': {
       position: 'absolute',
@@ -79,5 +81,23 @@ export default ({palette, breakpoints}) => ({
     bottom: '-1rem',
     fontSize: '0.8rem',
     margin: '0 14px',
+  },
+  submit: {
+    width: '8rem',
+    marginTop: '1.7rem',
+    color: palette.light,
+    backgroundColor: palette.mediumBlue,
+    alignSelf: 'flex-end',
+    '&:hover': {
+      cursor: 'none',
+      color: palette.firstDarkBlue,
+    },
+    '&:disabled': {
+      color: '#fdfdfd61',
+      backgroundColor: '#f2f3f547',
+    },
+    [breakpoints.down('xs')]: {
+      width: '100%',
+    },
   },
 })

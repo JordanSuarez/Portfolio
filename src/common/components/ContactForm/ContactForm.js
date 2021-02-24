@@ -1,38 +1,20 @@
 import React, {useState} from 'react'
 
+import {bool, func} from 'prop-types'
 import {Form} from 'react-final-form'
-import {func} from 'prop-types'
 import {TextField} from 'mui-rff'
+import Button from '@material-ui/core/Button'
 import ReCAPTCHA from 'react-google-recaptcha'
 
 import {classes as classesProps} from 'common/classes'
-import Button from 'common/components/Button'
 import plane1 from 'common/assets/images/logo/plane1.png'
 import validate from './validation'
 
-const Contact = ({classes, onFormSubmit}) => {
-  const [captcha, setCaptcha] = useState('')
-  const [error, setError] = useState(false)
+const Contact = ({classes, onSubmit, onChangeCaptcha, submitting, captcha}) => {
+  const [captchaError, setCaptchaError] = useState(false)
 
   const siteKey = process.env.REACT_APP_RECAPTCHA_KEY
-
-  const onChangeCaptcha = (values) => {
-    setCaptcha(values)
-    setError(false)
-  }
-
-  const onClick = () => (captcha.length === 0 ? setError(true) : null)
-
-  const onSubmit = (values) => {
-    const submitValues = {
-      ...values,
-      captcha,
-    }
-
-    if (!error) {
-      onFormSubmit(submitValues)
-    }
-  }
+  const {grecaptcha} = window
 
   return (
     <div className={classes.container}>
@@ -41,14 +23,19 @@ const Contact = ({classes, onFormSubmit}) => {
         className={classes.form}
         onSubmit={onSubmit}
         validate={validate}
-        render={({submitting, handleSubmit, form}) => (
+        render={({handleSubmit, form}) => (
           <form
-            onSubmit={async (event) => {
-              await handleSubmit(event)
-              form.reset()
-              form.resetFieldState('name')
-              form.resetFieldState('email')
-              form.resetFieldState('message')
+            onSubmit={(event) => {
+              event.preventDefault()
+              if (captcha.length > 0) {
+                return handleSubmit(event).then(() => {
+                  form.restart()
+                  grecaptcha.reset()
+                  setCaptchaError(false)
+                })
+              }
+
+              return setCaptchaError(true)
             }}
             noValidate
             className={classes.form}
@@ -60,6 +47,7 @@ const Contact = ({classes, onFormSubmit}) => {
               label="Nom"
               name="name"
               variant="filled"
+              required
               InputProps={{disableUnderline: true}}
             />
             <TextField
@@ -83,9 +71,11 @@ const Contact = ({classes, onFormSubmit}) => {
             />
             <div className={classes.captcha}>
               <ReCAPTCHA sitekey={siteKey} required onChange={onChangeCaptcha} />
-              {error && <span className={classes.errorMessage}>La vérification est requise</span>}
+              {captchaError && <span className={classes.errorMessage}>La vérification est requise</span>}
             </div>
-            <Button type="submit" disabled={submitting} label="Envoyer" onClick={onClick} />
+            <Button type="submit" disabled={submitting} variant="contained" className={classes.submit}>
+              Envoyer
+            </Button>
           </form>
         )}
       />
@@ -94,7 +84,10 @@ const Contact = ({classes, onFormSubmit}) => {
 }
 
 Contact.propTypes = {
-  onFormSubmit: func.isRequired,
+  captchaError: bool.isRequired,
+  onChangeCaptcha: func.isRequired,
+  onSubmit: func.isRequired,
+  submitting: bool.isRequired,
   ...classesProps,
 }
 
