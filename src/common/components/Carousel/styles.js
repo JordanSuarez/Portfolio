@@ -7,9 +7,11 @@ export default ({breakpoints}) => ({
         pointerEvents: 'none',
       },
     },
-    '& .awssld__controls': {
-      [breakpoints.down('xs')]: {
-        display: 'none',
+    '& .awssld__bullets': {
+      '& button': {
+        [breakpoints.down('xs')]: {
+          marginRight: '1rem',
+        },
       },
     },
   },
