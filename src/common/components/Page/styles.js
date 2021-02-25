@@ -23,7 +23,7 @@ export default ({palette, breakpoints}) => ({
   },
   wrapper: {
     overflow: 'scroll',
-    height: '-webkit-fill-available',
+    height: '80vh',
     marginTop: '5rem',
     paddingBottom: '5rem',
     borderTop: `1px solid ${palette.light}`,
