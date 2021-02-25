@@ -62,5 +62,6 @@ export default ({palette, breakpoints}) => ({
   },
   snackbar: {
     margin: 'auto',
+    zIndex: '0',
   },
 })

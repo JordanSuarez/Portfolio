@@ -1,4 +1,7 @@
 export default ({palette, font, breakpoints}) => ({
+  root: {
+    overflow: 'hidden',
+  },
   titleWrapper: {
     textAlign: 'center',
     color: palette.light,

@@ -152,6 +152,8 @@ const Cursor = ({classes, outerScale = 3, innerScale = 0.7}) => {
     }
   }, [isActive])
 
+  document.body.style.cursor = 'none'
+
   return (
     <>
       <div ref={cursorOuterRef} className={classes.cursorOuter} />
