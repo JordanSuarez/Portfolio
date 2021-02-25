@@ -1,5 +1,6 @@
 {
-  "name": "portfolio",
+  "name": "jordansuarez-portfolio",
+  "homepage": "https://jordansuarez.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
