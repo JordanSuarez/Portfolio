@@ -9,7 +9,7 @@ const palette = {
   white: '#ffffff',
   light: '#011832',
   lightGrey: '#a7a2a2',
-  lightBlue: '#e8f0fe',
+  lightBlue: '#f2f3f6',
   firstDarkBlue: '#f6f5f5',
   secondDarkBlue: '#141C88',
   mediumBlue: '#1c2886',

@@ -52,9 +52,6 @@ export default ({palette, breakpoints}) => ({
       backgroundColor: palette.lightBlue,
       borderRadius: '5px',
       position: 'relative',
-      '&:focus': {
-        backgroundColor: palette.light,
-      },
     },
     '& .MuiFormHelperText-root.Mui-error': {
       color: palette.lightRed,

@@ -5,5 +5,4 @@ export default () => ({
     top: '2.5rem',
     zIndex: '2',
   },
-  switch: {},
 })

@@ -16,14 +16,15 @@ const SwitchButton = ({classes, checked, handleChange}) => {
           checked={checked}
           onChange={handleChange}
           onColor={palette.light}
+          offColor={palette.light}
           onHandleColor={palette.lightRed}
+          offHandleColor={palette.lightRed}
           handleDiameter={30}
           uncheckedIcon={false}
           checkedIcon={false}
           boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
           height={20}
           width={48}
-          className={classes.switch}
           id="react-switch"
         />
       </label>
