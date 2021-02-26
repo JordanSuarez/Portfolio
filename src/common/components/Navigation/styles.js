@@ -80,7 +80,7 @@ export default ({palette, breakpoints}) => ({
     margin: '-100px 0 0 -50px',
     padding: '50px',
     paddingTop: '125px',
-    background: 'rgb(11 45 86 / 82%)',
+    background: palette.menu,
     'list-style-type': 'none',
     '-webkit-font-smoothing': 'antialiased',
     transformOrigin: '0% 0%',

@@ -67,6 +67,7 @@ export default ({palette, breakpoints}) => ({
       borderRadius: '7px',
       width: 'fit-content',
       padding: '0.5rem 1rem',
+      border: `2px solid #e2e7ed`,
     },
   },
   category: {

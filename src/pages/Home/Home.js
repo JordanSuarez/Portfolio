@@ -1,20 +1,18 @@
 import React from 'react'
 
 import {Link} from 'react-router-dom'
+import {useTheme} from '@material-ui/core/styles'
 
 import {classes as classesProps} from 'common/classes'
 import {getProjectRoute} from 'common/routing/routesResolver'
 import Base from 'common/components/Base'
 import Button from 'common/components/Button'
-import githubLogo from 'common/assets/images/logo/github1.png'
-import linkedinLogo from 'common/assets/images/logo/linkedin1.png'
-import moonLogo from 'common/assets/images/logo/moon.png'
 import Parallax from 'common/components/Parallax'
 
 const Home = ({classes}) => {
+  const {images} = useTheme()
   const githubUrl = process.env.REACT_APP_GITHUB
   const linkedinUrl = process.env.REACT_APP_LINKEDIN
-
   const subtitle = '- Développeur Web Front End -'
   const label = 'Mes réalisations'
 
@@ -43,15 +41,15 @@ const Home = ({classes}) => {
     subtitle: <p className={classes.subtitle}>{subtitle}</p>,
     linkedinLink: (
       <a href={linkedinUrl} rel="noreferrer" target="_blank" className={classes.link}>
-        <img src={linkedinLogo} alt="repository github" />
+        <img src={images.linkedin} alt="repository github" />
       </a>
     ),
     githubLink: (
       <a href={githubUrl} rel="noreferrer" target="_blank" className={classes.link}>
-        <img src={githubLogo} alt="repository github" />
+        <img src={images.github} alt="repository github" />
       </a>
     ),
-    moon: <img src={moonLogo} alt="repository github" />,
+    moon: <img src={images.moon} alt="repository github" />,
   }
 
   return (
