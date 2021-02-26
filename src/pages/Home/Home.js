@@ -55,7 +55,7 @@ const Home = ({classes}) => {
   }
 
   return (
-    <Base className={classes.root}>
+    <Base>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Parallax {...children} />
       <div className={classes.redirection}>
