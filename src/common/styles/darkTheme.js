@@ -2,7 +2,9 @@ import {createMuiTheme} from '@material-ui/core'
 
 import backgroundImage from 'common/assets/images/darkBackground.jpg'
 import githubLogo from 'common/assets/images/logo/github1.png'
+import githubLogo2 from 'common/assets/images/logo/github.png'
 import linkedinLogo from 'common/assets/images/logo/linkedin1.png'
+import linkedinLogo2 from 'common/assets/images/logo/linkedin.png'
 import moonLogo from 'common/assets/images/logo/moon.png'
 
 const palette = {
@@ -26,9 +28,11 @@ const font = {
 
 const images = {
   background: backgroundImage,
-  github: githubLogo,
-  linkedin: linkedinLogo,
+  githubHome: githubLogo,
+  linkedinHome: linkedinLogo,
   moon: moonLogo,
+  githubContact: githubLogo2,
+  linkedinContact: linkedinLogo2,
 }
 
 const breakpoints = {

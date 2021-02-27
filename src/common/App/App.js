@@ -9,12 +9,22 @@ import Router from 'common/routing/router'
 import SwitchButton from 'common/components/SwitchButton'
 
 const App = () => {
-  const [theme, setTheme] = useState('light')
-  const themeToggler = () => (theme === 'light' ? setTheme('dark') : setTheme('light'))
+  const dark = 'dark'
+  const light = 'light'
+  const theme = 'theme'
+
+  const getLocalStorage = () => localStorage.getItem(theme)
+  const [currentTheme, setCurrentTheme] = useState(getLocalStorage || light)
+
+  const saveLocalStorage = (themeColor) => {
+    setCurrentTheme(themeColor)
+    localStorage.setItem(theme, themeColor)
+  }
+  const themeToggler = () => (currentTheme === light ? saveLocalStorage(dark) : saveLocalStorage(light))
 
   return (
-    <MuiThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <SwitchButton handleChange={themeToggler} checked={theme === 'light'}>
+    <MuiThemeProvider theme={currentTheme === light ? lightTheme : darkTheme}>
+      <SwitchButton handleChange={themeToggler} checked={currentTheme === light}>
         Switch Theme
       </SwitchButton>
       <Router routes={routes} />

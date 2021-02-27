@@ -82,16 +82,10 @@ export default ({palette, breakpoints}) => ({
   submit: {
     width: '8rem',
     marginTop: '1.7rem',
-    color: palette.light,
-    backgroundColor: palette.mediumBlue,
     alignSelf: 'flex-end',
-    '&:hover': {
-      cursor: 'none',
-      color: palette.firstDarkBlue,
-    },
     '&:disabled': {
-      color: '#fdfdfd61',
-      backgroundColor: '#f2f3f547',
+      color: palette.firstDarkBlue,
+      backgroundColor: palette.lightGrey,
     },
     [breakpoints.down('xs')]: {
       width: '100%',

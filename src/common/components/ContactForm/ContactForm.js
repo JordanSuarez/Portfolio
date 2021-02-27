@@ -73,7 +73,7 @@ const Contact = ({classes, onSubmit, onChangeCaptcha, submitting, captcha}) => {
               <ReCAPTCHA sitekey={siteKey} required onChange={onChangeCaptcha} />
               {captchaError && <span className={classes.errorMessage}>La vérification est requise</span>}
             </div>
-            <Button type="submit" disabled={submitting} variant="contained" className={classes.submit}>
+            <Button type="submit" disabled={submitting} variant="outlined" className={classes.submit} color="primary">
               Envoyer
             </Button>
           </form>
