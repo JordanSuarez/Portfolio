@@ -11,7 +11,7 @@ export default ({palette, breakpoints}) => ({
     transition: 'color 0.3s ease',
     '& a': {
       textDecoration: 'none',
-      color: palette.light,
+      color: palette.second,
       transition: 'color 0.3s ease',
       fontSize: '2.5rem',
       [breakpoints.down('xs')]: {
@@ -48,7 +48,7 @@ export default ({palette, breakpoints}) => ({
     '&:checked ~ span': {
       opacity: 1,
       transform: 'rotate(45deg) translate(-2px, -1px)',
-      background: palette.light,
+      background: palette.second,
     },
     '&:checked ~ span:nth-last-child(3)': {
       opacity: '0',
@@ -67,7 +67,7 @@ export default ({palette, breakpoints}) => ({
     height: '4px',
     marginBottom: '5px',
     position: 'relative',
-    background: palette.light,
+    background: palette.second,
     borderRadius: '3px',
     zIndex: '1',
     transformOrigin: '4px 0px',
@@ -80,7 +80,7 @@ export default ({palette, breakpoints}) => ({
     margin: '-100px 0 0 -50px',
     padding: '50px',
     paddingTop: '125px',
-    background: 'rgb(11 45 86 / 82%)',
+    background: palette.menu,
     'list-style-type': 'none',
     '-webkit-font-smoothing': 'antialiased',
     transformOrigin: '0% 0%',
@@ -92,12 +92,12 @@ export default ({palette, breakpoints}) => ({
       fontWeight: '400',
       width: 'fit-content',
       '&::first-letter': {
-        textShadow: `-3px 1px 0px ${palette.lightRed}`,
-        border: `1px solid ${palette.light}`,
+        textShadow: `-3px 1px 0px ${palette.secondRed}`,
+        border: `1px solid ${palette.second}`,
         padding: '1px 6px 5px 10px',
         margin: '6rem -5px',
         '&:hover': {
-          color: palette.light,
+          color: palette.second,
         },
         '& a': {
           padding: '15px 20px',
@@ -108,7 +108,7 @@ export default ({palette, breakpoints}) => ({
       },
       '&:hover': {
         '& a': {
-          borderBottom: `3px solid ${palette.light}`,
+          borderBottom: `3px solid ${palette.second}`,
           padding: '3px 5px',
           transition: 'all 0.3s ease-in-out',
         },
@@ -116,7 +116,7 @@ export default ({palette, breakpoints}) => ({
     },
   },
   activeLink: {
-    borderBottom: `3px solid ${palette.light}`,
+    borderBottom: `3px solid ${palette.second}`,
     padding: '3px 5px',
   },
 })

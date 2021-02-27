@@ -1,10 +1,7 @@
 export default ({palette, font, breakpoints}) => ({
-  root: {
-    overflow: 'hidden',
-  },
   titleWrapper: {
     textAlign: 'center',
-    color: palette.light,
+    color: palette.second,
     '-webkit-touch-callout': 'none',
     '-webkit-user-select': 'none',
     '-html-user-select': 'none',
@@ -16,7 +13,7 @@ export default ({palette, font, breakpoints}) => ({
     fontFamily: font.title,
     fontWeight: 'bold',
     fontSize: '4rem',
-    textShadow: `-2px 1px 0px ${palette.firstDarkBlue}`,
+    textShadow: `-2px 1px 0px ${palette.first}`,
     [breakpoints.down('sm')]: {
       fontSize: '3rem',
     },
@@ -29,25 +26,25 @@ export default ({palette, font, breakpoints}) => ({
     animation: '$moveItBack 900ms ease forwards',
     willChange: 'transform',
     '&:hover': {
-      color: palette.lightRed,
+      color: palette.secondRed,
       animation: '$moveIt 1.5s ease forwards',
       willChange: 'transform',
     },
   },
   bracket: {
-    color: palette.lightRed,
+    color: palette.secondRed,
     '&:hover': {
-      color: palette.light,
+      color: palette.second,
     },
   },
   primaryLetter: {
-    textShadow: `-4px 1px 0px ${palette.lightRed}`,
-    border: `1px solid ${palette.light}`,
+    textShadow: `-4px 1px 0px ${palette.secondRed}`,
+    border: `1px solid ${palette.second}`,
     padding: '1px 6px 5px 10px',
     margin: '6rem -5px',
   },
   subtitle: {
-    color: palette.light,
+    color: palette.second,
     fontSize: '2rem',
     textAlign: 'center',
     [breakpoints.down('sm')]: {
