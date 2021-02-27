@@ -15,10 +15,10 @@ const SwitchButton = ({classes, checked, handleChange}) => {
         <Switch
           checked={checked}
           onChange={handleChange}
-          onColor={palette.light}
-          offColor={palette.light}
-          onHandleColor={palette.lightRed}
-          offHandleColor={palette.lightRed}
+          onColor={palette.second}
+          offColor={palette.second}
+          onHandleColor={palette.secondRed}
+          offHandleColor={palette.secondRed}
           handleDiameter={30}
           uncheckedIcon={false}
           checkedIcon={false}

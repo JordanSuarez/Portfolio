@@ -9,14 +9,14 @@ import moonLogo from 'common/assets/images/logo/moon.png'
 
 const palette = {
   white: '#ffffff',
-  light: '#f6f5f5',
-  lightGrey: '#f6f5f5',
-  lightBlue: '#e8f0fe',
-  firstDarkBlue: '#011832',
+  second: '#f6f5f5',
+  secondGrey: '#f6f5f5',
+  secondBlue: '#e8f0fe',
+  first: '#011832',
   secondDarkBlue: '#141C88',
   mediumBlue: '#1c2886',
   red: '#af2d2d',
-  lightRed: '#ce6262',
+  secondRed: '#ce6262',
   orange: '#ee6f57',
   menu: 'rgb(11 45 86 / 90%)',
 }

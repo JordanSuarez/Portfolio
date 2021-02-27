@@ -11,7 +11,7 @@ export default ({palette, breakpoints}) => ({
     display: 'flex',
     alignSelf: 'baseline',
     margin: '2rem auto',
-    color: palette.light,
+    color: palette.second,
     fontWeight: '400',
     fontSize: '1.7rem',
     [breakpoints.up('md')]: {
@@ -32,7 +32,7 @@ export default ({palette, breakpoints}) => ({
       alignItems: 'end',
       margin: '3rem auto 0',
       padding: '2rem 1rem',
-      borderTop: `3px solid ${palette.lightRed}`,
+      borderTop: `3px solid ${palette.secondRed}`,
     },
     '& li': {
       display: 'flex',
@@ -42,7 +42,7 @@ export default ({palette, breakpoints}) => ({
         flexDirection: 'column-reverse',
       },
       '& a': {
-        color: palette.light,
+        color: palette.second,
         textDecoration: 'none',
         fontSize: '1.2rem',
         '&:hover': {

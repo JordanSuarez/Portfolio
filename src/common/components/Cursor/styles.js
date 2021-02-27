@@ -13,7 +13,7 @@ export default ({palette, cursor}) => ({
     width: cursor.innerSize,
     height: cursor.innerSize,
     pointerEvents: 'none',
-    backgroundColor: palette.lightRed,
+    backgroundColor: palette.secondRed,
     transition: 'opacity 0.15s ease-in-out, transform 0.25s ease-in-out',
   },
   cursorOuter: {

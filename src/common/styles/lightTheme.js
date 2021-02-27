@@ -1,6 +1,7 @@
 import {createMuiTheme} from '@material-ui/core'
 
 import backgroundImage from 'common/assets/images/lightBackground.jpg'
+
 import githubLogo from 'common/assets/images/logo/github2.png'
 import githubLogo2 from 'common/assets/images/logo/github3.png'
 import linkedinLogo from 'common/assets/images/logo/linkedin2.png'
@@ -9,14 +10,14 @@ import moonLogo from 'common/assets/images/logo/moon1.png'
 
 const palette = {
   white: '#ffffff',
-  light: '#011832',
-  lightGrey: '#a7a2a2',
-  lightBlue: '#f2f3f6',
-  firstDarkBlue: '#f6f5f5',
+  second: '#011832',
+  secondGrey: '#a7a2a2',
+  secondBlue: '#f2f3f6',
+  first: '#f6f5f5',
   secondDarkBlue: '#141C88',
   mediumBlue: '#1c2886',
   red: '#af2d2d',
-  lightRed: '#ce6262',
+  secondRed: '#ce6262',
   orange: '#ee6f57',
   menu: 'rgb(216 216 216 / 90%)',
 }

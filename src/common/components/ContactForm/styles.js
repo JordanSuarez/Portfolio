@@ -14,7 +14,7 @@ export default ({palette, breakpoints}) => ({
     fontSize: '1.5rem',
     padding: '0.5rem',
     fontWeight: '400',
-    color: palette.light,
+    color: palette.second,
     [breakpoints.down('sm')]: {
       textAlign: 'center',
     },
@@ -43,21 +43,21 @@ export default ({palette, breakpoints}) => ({
   textField: {
     marginBottom: '2rem',
     width: '100%',
-    color: palette.firstDarkBlue,
+    color: palette.first,
     '& .MuiFilledInput-multiline': {
       padding: '0',
     },
     '& .MuiInputBase-input': {
       padding: '27px 12px 10px',
-      backgroundColor: palette.lightBlue,
+      backgroundColor: palette.secondBlue,
       borderRadius: '5px',
       position: 'relative',
     },
     '& .MuiFormHelperText-root.Mui-error': {
-      color: palette.lightRed,
+      color: palette.secondRed,
     },
     '& .MuiFormLabel-root.Mui-error': {
-      color: palette.lightRed,
+      color: palette.secondRed,
     },
     '& p': {
       position: 'absolute',
@@ -73,7 +73,7 @@ export default ({palette, breakpoints}) => ({
   },
   errorMessage: {
     position: 'absolute',
-    color: palette.lightRed,
+    color: palette.secondRed,
     fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
     bottom: '-1rem',
     fontSize: '0.8rem',
@@ -84,8 +84,8 @@ export default ({palette, breakpoints}) => ({
     marginTop: '1.7rem',
     alignSelf: 'flex-end',
     '&:disabled': {
-      color: palette.firstDarkBlue,
-      backgroundColor: palette.lightGrey,
+      color: palette.first,
+      backgroundColor: palette.secondGrey,
     },
     [breakpoints.down('xs')]: {
       width: '100%',

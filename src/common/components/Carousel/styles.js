@@ -9,17 +9,17 @@ export default ({breakpoints, palette}) => ({
     },
     '& .awssld__bullets': {
       '& button': {
-        backgroundColor: palette.lightGrey,
+        backgroundColor: palette.secondGrey,
         [breakpoints.down('xs')]: {
           marginRight: '1rem',
         },
       },
       '& .awssld__bullets--active': {
-        backgroundColor: palette.lightRed,
+        backgroundColor: palette.secondRed,
       },
     },
     '& .awssld__controls': {
-      '--organic-arrow-color': palette.lightGrey,
+      '--organic-arrow-color': palette.secondGrey,
     },
   },
 })

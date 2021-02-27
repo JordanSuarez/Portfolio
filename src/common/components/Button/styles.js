@@ -4,7 +4,7 @@ export default ({palette}) => ({
     border: 'none',
     borderRadius: '5px',
     overflow: 'hidden',
-    background: palette.lightRed,
+    background: palette.secondRed,
     '-webkit-transition': 'background-color 0.3s',
     transition: 'background-color 0.3s',
     color: '#f6f5f5',
@@ -14,10 +14,10 @@ export default ({palette}) => ({
       display: 'inline-block',
     },
     '&:active': {
-      backgroundColor: palette.light,
+      backgroundColor: palette.second,
     },
     '&:hover': {
-      backgroundColor: palette.light,
+      backgroundColor: palette.second,
       '& > span': {
         '&:nth-child(odd)': {
           '-webkit-animation': '$anim-nanuk-1 0.5s forwards',
@@ -99,28 +99,28 @@ export default ({palette}) => ({
       opacity: 1,
       '-webkit-transform': 'translate3d(0, 0, 0)',
       transform: 'translate3d(0, 0, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '49%': {
       opacity: 1,
       '-webkit-transform': 'translate3d(0, 100%, 0)',
       transform: 'translate3d(0, 100%, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '50%': {
       opacity: 0,
       '-webkit-transform': 'translate3d(0, 100%, 0)',
       transform: 'translate3d(0, 100%, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '51%': {
       opacity: 0,
       '-webkit-transform': 'translate3d(0, -100%, 0)',
       transform: 'translate3d(0, -100%, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '100%': {
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
   },
   '@keyframes anim-nanuk-2': {
@@ -128,28 +128,28 @@ export default ({palette}) => ({
       opacity: 1,
       '-webkit-transform': 'translate3d(0, 0, 0)',
       transform: 'translate3d(0, 0, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '49%': {
       opacity: 1,
       '-webkit-transform': 'translate3d(0, -100%, 0)',
       transform: 'translate3d(0, -100%, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '50%': {
       opacity: 0,
       '-webkit-transform': 'translate3d(0, -100%, 0)',
       transform: 'translate3d(0, -100%, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '51%': {
       opacity: '0',
       '-webkit-transform': 'translate3d(0, 100%, 0)',
       transform: 'translate3d(0, 100%, 0)',
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
     '100%': {
-      color: palette.firstDarkBlue,
+      color: palette.first,
     },
   },
 })
