@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
 
+import {useTheme} from '@material-ui/core/styles'
 import axios from 'axios'
 
 import {classes as classesProps} from 'common/classes'
 import ContactForm from 'common/components/ContactForm'
-import githubLogo from 'common/assets/images/logo/github.png'
-import linkedinLogo from 'common/assets/images/logo/linkedin.png'
 import Page from 'common/components/Page'
 import Snackbar from 'common/components/Snackbar'
 
 const Contact = ({classes}) => {
+  const {images} = useTheme()
   const [feedback, setFeedback] = useState({isOpen: false, severity: '', username: ''})
   const [submitting, setSubmitting] = useState(false)
   const [captcha, setCaptcha] = useState('')
@@ -87,7 +87,7 @@ const Contact = ({classes}) => {
                 Consultez mon profil Github
               </a>
               <a href={githubUrl} target="_blank" rel="noreferrer">
-                <img src={githubLogo} alt="profil github" />
+                <img src={images.githubContact} alt="profil github" />
               </a>
             </li>
             <li>
@@ -95,7 +95,7 @@ const Contact = ({classes}) => {
                 Retrouvez-moi sur Linkedin
               </a>
               <a href={linkedinUrl} target="_blank" rel="noreferrer">
-                <img src={linkedinLogo} alt="profil linkedin" />
+                <img src={images.linkedinContact} alt="profil linkedin" />
               </a>
             </li>
           </ul>

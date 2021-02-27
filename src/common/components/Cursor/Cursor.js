@@ -1,5 +1,7 @@
 import React, {useCallback, useEffect, useRef, useState} from 'react'
 
+import {useHistory} from 'react-router-dom'
+
 import {classes as classesProps} from 'common/classes'
 
 const useEventListener = (eventName, handler, element = document) => {
@@ -153,6 +155,13 @@ const Cursor = ({classes, outerScale = 3, innerScale = 0.7}) => {
   }, [isActive])
 
   document.body.style.cursor = 'none'
+
+  const {location} = useHistory()
+
+  // Reset cursor active state on page change
+  useEffect(() => {
+    setIsActive(false)
+  }, [location])
 
   return (
     <>

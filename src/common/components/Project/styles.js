@@ -17,7 +17,7 @@ export default ({palette, breakpoints}) => ({
     },
   },
   article: {
-    color: palette.light,
+    color: palette.second,
     display: 'flex',
     flexWrap: 'wrap',
     flexDirection: 'column',
@@ -67,6 +67,7 @@ export default ({palette, breakpoints}) => ({
       borderRadius: '7px',
       width: 'fit-content',
       padding: '0.5rem 1rem',
+      border: `2px solid #e2e7ed`,
     },
   },
   category: {
@@ -81,7 +82,7 @@ export default ({palette, breakpoints}) => ({
     height: '3px',
     marginBottom: '1rem',
     borderRadius: '1rem',
-    backgroundColor: palette.lightRed,
+    backgroundColor: palette.secondRed,
   },
   sliderContainer: {
     width: '90%',

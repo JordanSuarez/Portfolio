@@ -1,11 +1,11 @@
-import background from 'common/assets/images/background.jpg'
-
-export default () => ({
+export default ({images}) => ({
   root: {
     height: '100vh',
     overflowY: 'hidden',
     overflowX: 'hidden',
-    backgroundImage: `url(${background})`,
+    backgroundImage: `url(${images.background})`,
     backgroundPosition: 'top',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'unset',
   },
 })
