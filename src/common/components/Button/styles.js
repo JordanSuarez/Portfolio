@@ -5,10 +5,10 @@ export default ({palette}) => ({
     borderRadius: '5px',
     overflow: 'hidden',
     background: palette.secondRed,
+    fontSize: '1rem',
     '-webkit-transition': 'background-color 0.3s',
     transition: 'background-color 0.3s',
     color: '#f6f5f5',
-    textTransform: 'uppercase',
     outline: 'none',
     '& > span': {
       display: 'inline-block',

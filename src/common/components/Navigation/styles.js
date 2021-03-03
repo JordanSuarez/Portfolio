@@ -93,9 +93,6 @@ export default ({palette, breakpoints}) => ({
       width: 'fit-content',
       '&::first-letter': {
         textShadow: `-3px 1px 0px ${palette.secondRed}`,
-        border: `1px solid ${palette.second}`,
-        padding: '1px 6px 5px 10px',
-        margin: '6rem -5px',
         '&:hover': {
           color: palette.second,
         },
@@ -109,8 +106,7 @@ export default ({palette, breakpoints}) => ({
       '&:hover': {
         '& a': {
           borderBottom: `3px solid ${palette.second}`,
-          padding: '3px 5px',
-          transition: 'all 0.3s ease-in-out',
+          transition: 'all 0.2s ease-in-out',
         },
       },
     },

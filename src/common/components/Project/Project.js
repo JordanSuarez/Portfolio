@@ -25,11 +25,11 @@ const Project = ({classes, title, logos, description, context, imagesUrl, featur
           </ul>
           <div>
             <div className={classes.categoriesContainer}>
-              <span className={classes.category}>Technologies</span>
+              <h3 className={classes.category}>Technologies</h3>
               <Fade bottom>
                 <div>
                   {logos.map((logo) => (
-                    <img src={logo} alt="" className={classes.icon} key={uuid()} />
+                    <img src={logo} alt="technologies icons used" className={classes.icon} key={uuid()} />
                   ))}
                 </div>
               </Fade>

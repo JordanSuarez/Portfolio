@@ -1,6 +1,4 @@
-html *,
-body * {
-  /*cursor: none;*/
+h1, h2, h3, a {
   font-family: Oswald, sans-serif;
 }
 

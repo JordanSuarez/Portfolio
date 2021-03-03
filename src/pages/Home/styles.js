@@ -39,9 +39,6 @@ export default ({palette, font, breakpoints}) => ({
   },
   primaryLetter: {
     textShadow: `-4px 1px 0px ${palette.secondRed}`,
-    border: `1px solid ${palette.second}`,
-    padding: '1px 6px 5px 10px',
-    margin: '6rem -5px',
   },
   subtitle: {
     color: palette.second,

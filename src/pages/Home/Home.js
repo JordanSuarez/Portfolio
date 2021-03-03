@@ -16,7 +16,7 @@ const Home = ({classes}) => {
   const githubUrl = process.env.REACT_APP_GITHUB
   const linkedinUrl = process.env.REACT_APP_LINKEDIN
 
-  const subtitle = '- Développeur Web Front End -'
+  const subtitle = '- Développeur Web -'
   const label = 'Mes réalisations'
   const title = 'Jordan {Suarez}'
 
@@ -59,7 +59,7 @@ const Home = ({classes}) => {
     subtitle: <p className={classes.subtitle}>{subtitle}</p>,
     linkedinLink: (
       <a href={linkedinUrl} rel="noreferrer" target="_blank" className={classes.link}>
-        <img src={images.linkedinHome} alt="repository github" />
+        <img src={images.linkedinHome} alt="linkedin profile" />
       </a>
     ),
     githubLink: (
@@ -67,7 +67,7 @@ const Home = ({classes}) => {
         <img src={images.githubHome} alt="repository github" />
       </a>
     ),
-    moon: <img src={images.moon} alt="repository github" />,
+    moon: <img src={images.moon} alt="moon" />,
   }
 
   return (
