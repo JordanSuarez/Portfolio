@@ -38,8 +38,9 @@ export default [
       'Pagination et recherche',
       'Back office',
       'Test unitaire',
+      'Gestion de projet inspiré de la méthodologie Scrum',
     ],
-    context: ' Projet de fin de formation',
+    context: ' Projet de fin de formation - Développeur Frontend',
     imagesUrl: [
       projetsDeDevImage1,
       projetsDeDevImage2,
@@ -73,11 +74,12 @@ export default [
     description: 'Application permettant la création et la gestion de recette de cuisine',
     features: [
       'Authentification via JWT',
-      'Traduction avec react-i18n',
+      "Utilisation de react-i18n pour la mise en place d'une traduction",
       'Ajout, modification, édition et suppression de ressources',
       'Pagination et recherche',
+      'Gestion de projet inspiré de la méthodologie Scrum',
     ],
-    context: ' Projet personnel',
+    context: ' Projet personnel - Développeur Fullstack',
     imagesUrl: [cookMeImage1, cookMeImage2, cookMeImage3, cookMeImage4, cookMeImage5, cookMeImage6],
   },
   {

@@ -22,7 +22,8 @@ const palette = {
 }
 
 const font = {
-  main: 'Yanone Kaffeesatz',
+  // main: 'Yanone Kaffeesatz',
+  main: 'Open Sans, sans-serif',
   title: 'Oswald',
 }
 

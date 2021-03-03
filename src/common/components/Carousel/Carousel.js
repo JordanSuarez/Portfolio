@@ -10,7 +10,7 @@ import {classes as classesProps} from 'common/classes'
 import styles from './style.css'
 
 const Carousel = ({items, classes}) => (
-  <AwesomeSlider animation="fallAnimation" cssModule={[CoreStyles, AnimationStyles, styles]} className={classes.carousel} mobileTouch>
+  <AwesomeSlider cssModule={[CoreStyles, AnimationStyles, styles]} className={classes.carousel} mobileTouch>
     {items.map((item) => (
       <div data-src={item} key={uuid()} />
     ))}

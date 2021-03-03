@@ -1,4 +1,4 @@
-export default ({palette, breakpoints}) => ({
+export default ({palette, breakpoints, font}) => ({
   projectContainer: {
     display: 'flex',
     flexDirection: 'row-reverse',
@@ -17,6 +17,7 @@ export default ({palette, breakpoints}) => ({
     },
   },
   article: {
+    fontFamily: font.main,
     color: palette.second,
     display: 'flex',
     flexWrap: 'wrap',
@@ -42,6 +43,7 @@ export default ({palette, breakpoints}) => ({
     },
   },
   context: {
+    fontFamily: font.main,
     display: 'block',
     fontSize: '1rem',
     fontStyle: 'italic',
@@ -71,7 +73,8 @@ export default ({palette, breakpoints}) => ({
     },
   },
   category: {
-    textTransform: 'upperCase',
+    fontWeight: '400',
+    fontSize: '1.5rem',
     margin: '1rem 0',
   },
   icon: {

@@ -3,7 +3,7 @@ import React from 'react'
 import {classes as classesProps} from 'common/classes'
 import Page from 'common/components/Page'
 import Project from 'common/components/Project'
-import projectsList from './helper/projectsList'
+import projectsList from './provider/projectsList'
 
 const Projects = () => (
   <Page title="Réalisations">

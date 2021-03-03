@@ -9,9 +9,6 @@ export default ({palette, breakpoints}) => ({
     textShadow: `-2px 1px 0px ${palette.first}`,
     '&::first-letter': {
       textShadow: `-3px 1px 0px ${palette.secondRed}`,
-      border: `1px solid ${palette.second}`,
-      padding: '1px 6px 5px 10px',
-      margin: '6rem -4px',
     },
     [breakpoints.up('xs')]: {
       fontSize: '2rem',
