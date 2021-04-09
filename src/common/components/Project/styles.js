@@ -44,9 +44,13 @@ export default ({palette, breakpoints, font}) => ({
   },
   context: {
     fontFamily: font.main,
-    display: 'block',
     fontSize: '1rem',
     fontStyle: 'italic',
+  },
+  link: {
+    fontFamily: font.main,
+    color: palette.secondRed,
+    marginLeft: '0.2rem',
   },
   categoriesContainer: {
     display: 'flex',
