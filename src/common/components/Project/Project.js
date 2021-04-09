@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 import {classes as classesProps} from 'common/classes'
 import Carousel from 'common/components/Carousel'
 
-const Project = ({classes, title, logos, description, context, imagesUrl, features, id}) => (
+const Project = ({classes, title, logos, description, context, imagesUrl, features, id, link}) => (
   <Fade bottom>
     <div className={classes.projectContainer}>
       <Fade left={id % 2 !== 0} right={id % 2 === 0} cascade>
@@ -15,7 +15,14 @@ const Project = ({classes, title, logos, description, context, imagesUrl, featur
           <div className={classes.divider} />
           <h2 className={classes.title}>
             {title}
-            <span className={classes.context}>{context}</span>
+            <div className={classes.context}>
+              <span>{context}</span>
+              {link && (
+                <a href={link} rel="noreferrer" target="_blank" className={classes.link}>
+                  Lien du projet en ligne
+                </a>
+              )}
+            </div>
           </h2>
           <p>{description}</p>
           <ul>
