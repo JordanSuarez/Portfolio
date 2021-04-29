@@ -1,4 +1,4 @@
-import {cookMe, projetsDeDev, sportFields, swapiDashboard, translationChromeExtension} from './logos'
+import {boxOfShame, cookMe, projetsDeDev, sportFields, swapiDashboard, translationChromeExtension} from './logos'
 // Chrome extension
 import chromeExtensionImage1 from 'common/assets/images/extension/translation1.png'
 import chromeExtensionImage2 from 'common/assets/images/extension/translation2.png'
@@ -30,13 +30,36 @@ import sportFieldsImage4 from 'common/assets/images/sportFields/sportFields4.png
 import sportFieldsImage5 from 'common/assets/images/sportFields/sportFields5.png'
 import sportFieldsImage6 from 'common/assets/images/sportFields/sportFields6.png'
 import sportFieldsImage7 from 'common/assets/images/sportFields/sportFields7.jpeg'
+// Box of shame
+import boxOfShameImage1 from 'common/assets/images/boxOfShame/boxOfShame1.png'
+import boxOfShameImage2 from 'common/assets/images/boxOfShame/boxOfShame2.png'
+import boxOfShameImage3 from 'common/assets/images/boxOfShame/boxOfShame3.png'
 
 export default [
   {
     id: 1,
+    title: 'Box of shame',
+    logos: boxOfShame,
+    link: 'https://github.com/JordanSuarez/box-of-shame-api',
+    isDeployed: false,
+    description: 'API Rest développé en Javascript permettant de tirer au sort des gages uniques par utilisateur',
+    features: [
+      'API Rest',
+      'Documentation avec Swagger',
+      'Containérisation avec Docker',
+      "Utilisation de Docker-compose et création d'un Makefile",
+      'Authentification via JWT et PassportJs',
+      'CRUD et protection des ressources',
+    ],
+    context: ' Projet personnel -',
+    imagesUrl: [boxOfShameImage1, boxOfShameImage2, boxOfShameImage3],
+  },
+  {
+    id: 2,
     title: 'Sport Fields',
     logos: sportFields,
     link: 'https://sport-fields.surge.sh/',
+    isDeployed: true,
     description:
       "Progressive Web APP (PWA) développé avec le framework Angular 11. Utilisation de la géolocalisation pour afficher des équipements sportifs selon le type, la ville ou l'adresse.",
     features: [
@@ -58,9 +81,11 @@ export default [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Projets de dev',
     logos: projetsDeDev,
+    link: 'https://github.com/JordanSuarez/Projets-de-dev',
+    isDeployed: false,
     description:
       "Plateforme collaborative développé entièrement en Javascript. Elle permet l'hébergement, le partage et la mise en relation de projets Web.",
     features: [
@@ -73,7 +98,7 @@ export default [
       'Test unitaire',
       'Gestion de projet inspiré de la méthodologie Scrum',
     ],
-    context: ' Projet de fin de formation - Développeur Frontend',
+    context: ' Projet de fin de formation - Développeur Frontend -',
     imagesUrl: [
       projetsDeDevImage1,
       projetsDeDevImage2,
@@ -85,9 +110,11 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Translation Chrome extension',
     logos: translationChromeExtension,
+    link: 'https://github.com/JordanSuarez/Translation-Chrome-extension',
+    isDeployed: false,
     description:
       'Extension google chrome permettant de traduire un mot ou une phrase sélectionné, en insérant la traduction directement dans la page.',
     features: [
@@ -97,13 +124,14 @@ export default [
       "Désactivation de l'extension depuis la popup",
       'Insertion de la traduction après la sélection',
     ],
-    context: ' Projet personnel',
+    context: ' Projet personnel -',
     imagesUrl: [chromeExtensionImage1, chromeExtensionImage2, chromeExtensionImage3, chromeExtensionImage4],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Cook-me',
     logos: cookMe,
+    isDeployed: false,
     description: 'Application permettant la création et la gestion de recette de cuisine',
     features: [
       'Authentification via JWT',
@@ -112,16 +140,18 @@ export default [
       'Pagination et recherche',
       'Gestion de projet inspiré de la méthodologie Scrum',
     ],
-    context: ' Projet personnel - Développeur Fullstack',
+    context: ' Projet personnel - Développeur Fullstack -',
     imagesUrl: [cookMeImage1, cookMeImage2, cookMeImage3, cookMeImage4, cookMeImage5, cookMeImage6],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Swapi dashboard',
     logos: swapiDashboard,
+    link: 'https://github.com/JordanSuarez/Swapi-Dashboard',
+    isDeployed: false,
     description: 'Répertoire de données des personnages, planètes, véhicules et films de l’univers de Star Wars.',
     features: ["Utilisation de l'API Swapi", 'Affichage des ressources suivant la sélection', 'Liste paginable'],
-    context: ' Projet personnel',
+    context: ' Projet personnel -',
     imagesUrl: [swapiImage1, swapiImage2],
   },
 ]
